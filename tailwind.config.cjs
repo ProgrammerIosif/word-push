@@ -13,15 +13,18 @@ module.exports = {
     colors: {
       'primary-nav': '#003C56',
       'primary-dropdown': '#044b7a',
+      'primary-button': '#0675c4',
       'li-hover': '#e9f0f5',
       'transparent': 'transparent',
       'white': 'white',
-      'green': 'green'
+      'black': 'black',
+      'green': 'green',
+      'grey': '#f2f2f2'
     },
     extend: {
       boxShadow: {
         'dropdown': '0 20px 100px -5px rgba(0,0,0,0.27)'
-      }
+      },
     }
   },
 
