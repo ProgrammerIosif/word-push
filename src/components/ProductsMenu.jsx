@@ -28,7 +28,7 @@ function ProductsMenu() {
   };
 
   return (
-    <div className="my-24 flex ">
+    <div className="my-24 flex justify-between">
       <div className="w-80 text-[#707374] text-3xl font-light">
         <ul className="flex flex-col justify-start gap-5">
           {items.map((item, index) => (

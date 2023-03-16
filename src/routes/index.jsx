@@ -29,6 +29,17 @@ function Index() {
           </div>
         </div>
       </section>
+      <section className='mt-60 bg-white -mb-60'>
+        <div className="pt-32 w-full max-w-6xl max-xl:px-5 mx-auto">
+            <h1 className="font-serif text-7xl">Infinitely efortless editing</h1>
+            <p className="max-w-4xl text-lg font-normal mt-6">Magically drag, drop and draw on a huge collection of design patterns, features, and layouts with the intuitive, built-in block editor.</p>
+            <button className="mt-10 bg-black text-white flex justify-center items-center w-40 h-14 rounded-md font-medium">Start creating</button>
+            <video className="my-16" src="https://s1.wp.com/wp-content/themes/h4/assets/block-editor/2022-10@2x.mp4" autoPlay loop></video>
+        </div>
+      </section>
+      <section className=' bg-primary-button h-80'>
+
+      </section>
     </>
   )
 }
