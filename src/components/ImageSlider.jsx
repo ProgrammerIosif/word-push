@@ -32,7 +32,7 @@ function ImageSlider() {
   }, [images]);
 
   return (
-      <div className="relative w-[93%] aspect-[10/6.5] border-[12px] border-grey rounded-3xl mt-16">
+      <div className="relative w-[93%] xl:w-[100%] aspect-[10/6.5] border-[12px] border-grey rounded-3xl mt-16">
         {images.map((image, index) => (
           <img
             key={index}

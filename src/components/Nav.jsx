@@ -13,24 +13,24 @@ function Nav() {
   ]
   return (
     <>
-    <div className='h-14 flex justify-between py-3 px-6 text-lg font-semibold text-primary-nav'>
-      <ul className="flex items-center">
-        <Link to="/" className='flex mr-5 pb-0.5 gap-1'>
+    <div className='h-14 flex justify-between px-6 text-lg font-semibold text-primary-nav'>
+      <ul className="flex">
+        <Link to="/" className='flex mr-5 pb-0.5 gap-1 py-[11px]'>
             <img className='h-7' src="https://cdn-icons-png.flaticon.com/512/49/49006.png" alt=""/>
             <h2 className='font-medium text-xl'>WordPush.com</h2>
         </Link>
         {itemsWithDropdown.map((item,idx) => (
-            <li className="after:content-['▾'] pr-5" 
+            <li className="after:content-['▾'] pr-5 cursor-pointer py-3" 
                 onMouseEnter={() => {setDropdownIdx(idx+1),setDropdownVisibility(true)}}
                 onMouseLeave={() => setDropdownVisibility(false)}>
                   {item.name} 
             </li>
           ))}
-        <li>Plans & Pricing</li>
+        <li className="py-3">Plans & Pricing</li>
       </ul>
       <div className="flex">
         <button>Log In</button>
-        <button className="ml-8 px-3 border rounded-md border-primary-nav">Get Started</button> 
+        <button className="ml-8 my-2 px-3 border rounded-md border-primary-nav">Get Started</button> 
       </div>
     </div>
     <div>

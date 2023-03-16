@@ -39,7 +39,7 @@ function Dropdown(props) {
   }
   
   return (
-    <div className={`w-56 fixed top-8 left-[${y}px] transition-all ease-out duration-300 ${render || hover ? '' : 'hidden'} pt-4`}
+    <div className={`w-56 fixed top-10 left-[${y}px] transition-all ease-out duration-300 ${render || hover ? '' : 'hidden'} pt-4`}
 
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}>
