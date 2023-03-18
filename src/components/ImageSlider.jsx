@@ -32,7 +32,7 @@ function ImageSlider() {
   }, [images]);
 
   return (
-      <div className="relative w-[93%] xl:w-[100%] aspect-[10/6.5] border-[12px] border-grey rounded-3xl mt-16">
+      <div className="relative w-[93%] xl:w-[100%] aspect-[10/6.5] border-[12px] border-[#f2f2f2] rounded-3xl mt-16">
         {images.map((image, index) => (
           <img
             key={index}
@@ -43,7 +43,7 @@ function ImageSlider() {
             alt={`Slider image ${index}`}
           />
         ))}
-        <div className='absolute -right-20 top-12 w-40 h-24 bg-grey/40 backdrop-blur-xl rounded-xl shadow-md'>
+        <div className='absolute -right-20 top-12 w-40 h-24 bg-[#f2f2f2]/40 backdrop-blur-xl rounded-xl shadow-md'>
           {samples.map((sample, idx) => 
 
             <div key={idx} 

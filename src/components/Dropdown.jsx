@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function Dropdown(props) {
   const {idx,y,render} = props;
   const [hover, setHover] = useState(false);
-  const liClasses = 'px-6 py-2 hover:bg-li-hover transition-all'
+  const liClasses = 'px-6 py-2 hover:bg-[#e9f0f5] transition-all'
 
   const displayContent = () => {
     switch (idx) {
@@ -43,7 +43,7 @@ function Dropdown(props) {
 
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}>
-        <ul className="py-4 text-primary-dropdown text-sm font-semibold flex flex-col rounded-lg shadow-dropdown bg-white">
+        <ul className="py-4 text-[#044b7a] text-sm font-semibold flex flex-col rounded-lg shadow-dropdown bg-white">
           {displayContent()}
         </ul>
     </div>

@@ -3,6 +3,7 @@ import ImageGrid from '../components/ImageGrid';
 import ProductsMenu from '../components/ProductsMenu';
 import SearchBar from '../components/SearchBar';
 import Cards from '../components/Cards';
+import Plans from '../components/Plans';
 
 function Index() {
 
@@ -12,7 +13,7 @@ function Index() {
         <div className="pt-32 w-full max-w-6xl max-xl:px-5 mx-auto">
             <h1 className="font-serif text-7xl"><span className="">Welcome to the world’s</span><br /><span>most popular website builder.</span></h1>
             <p className="max-w-4xl text-lg font-normal mt-6">42% of the web is built on WordPress. More bloggers, small businesses, and Fortune 500 companies use WordPress than all other options combined. Join the millions of people that call WordPress.com home.</p>
-            <button className="mt-10 bg-primary-button text-white flex justify-center items-center w-40 h-14 rounded-md">Get Started</button>
+            <button className="mt-10 bg-[#0675c4] text-white flex justify-center items-center w-40 h-14 rounded-md">Get Started</button>
             <ImageSlider/> 
         </div>
       </section>
@@ -53,6 +54,12 @@ function Index() {
             <p className="max-w-3xl text-lg font-normal mt-6">Say hello to the next-level hosting performance made possible when you deeply integrate every piece of hardware and line of code to run WordPress at speed and scale.</p>
             <button className="mt-12 bg-[#0675c4] text-white flex justify-center items-center w-48 h-12 rounded-md font-medium mb-24">Explore hosting</button>
             <Cards/>
+        </div>
+      </section>
+      <section className='bg-white mb-28'>
+        <div className="pt-60 w-full max-w-[1500px] max-xl:px-5 mx-auto flex flex-col items-center">
+            <h1 className="font-serif text-5xl max-w-5xl mb-5">Choose your flavor of WordPush</h1>
+            <Plans/>
         </div>
       </section>
     </>
