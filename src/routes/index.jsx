@@ -2,6 +2,7 @@ import ImageSlider from '../components/ImageSlider';
 import ImageGrid from '../components/ImageGrid';
 import ProductsMenu from '../components/ProductsMenu';
 import SearchBar from '../components/SearchBar';
+import Cards from '../components/Cards';
 
 function Index() {
 
@@ -46,13 +47,13 @@ function Index() {
             <SearchBar/>
         </div>
       </section>
-      <section className='bg-[#e9eff5]'>
+      <section className='bg-[#e9eff5] pb-28'>
         <div className="pt-60 w-full max-w-6xl max-xl:px-5 mx-auto">
             <h1 className="font-serif text-7xl max-w-5xl">Basically, the best managed WordPress hosting on the planet.</h1>
             <p className="max-w-3xl text-lg font-normal mt-6">Say hello to the next-level hosting performance made possible when you deeply integrate every piece of hardware and line of code to run WordPress at speed and scale.</p>
-            <button className="mt-12 bg-[#0675c4] text-white flex justify-center items-center w-48 h-12 rounded-md font-medium">Explore hosting</button>
+            <button className="mt-12 bg-[#0675c4] text-white flex justify-center items-center w-48 h-12 rounded-md font-medium mb-24">Explore hosting</button>
+            <Cards/>
         </div>
-
       </section>
     </>
   )
