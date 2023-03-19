@@ -44,8 +44,8 @@ function Index() {
         <div className="pt-32 w-full max-w-6xl max-xl:px-5 mx-auto">
             <h1 className="font-serif text-7xl">Your home on the web</h1>
             <p className="max-w-xl text-lg font-normal mt-6">Nothing sets your site apart faster than a unique address on the web. From <b>.com</b> to <b>.blog</b>, there’s a one-of-a-kind domain with your name on it. And your first year is free with any annual paid plan.</p>
-            <button className="mt-12 bg-black text-white flex justify-center items-center w-48 h-12 rounded-md font-medium">Find your domain</button>
-            <SearchBar/>
+            <button className="my-12 bg-black text-white flex justify-center items-center w-48 h-12 rounded-md font-medium">Find your domain</button>
+            <SearchBar classes={'text-3xl'}/>
         </div>
       </section>
       <section className='bg-[#e9eff5] pb-28'>
@@ -60,6 +60,41 @@ function Index() {
         <div className="pt-60 w-full max-w-[1500px] max-xl:px-5 mx-auto flex flex-col items-center">
             <h1 className="font-serif text-5xl max-w-5xl mb-5">Choose your flavor of WordPush</h1>
             <Plans/>
+        </div>
+      </section>
+      <section className='bg-[#e9eff5] pt-36 pb-24'>
+        <div className="w-full max-w-6xl max-xl:px-5 mx-auto">
+            <h1 className="font-serif text-6xl max-w-5xl">You'll never build alone</h1>
+            <p className="max-w-2xl text-lg font-normal mt-6">Wherever you are in your journey, you don’t need to build your site alone. From direct support by email and live chat, to done-for-you sites built by our expert team, we’ve got your back every step of the way.</p>
+            <div className='grid grid-cols-2 pt-16 gap-6'>
+              <div>
+                <img src="https://s1.wp.com/wp-content/themes/h4/landing/marketing/pages/hp-2022-oct/media/desktop/real-support-image-2x.webp" alt="" />
+                <h5 className='font-serif text-5xl my-5'>Real support</h5>
+                <p>Our Happiness Engineers are always on hand to help. From live chat and expert email guidance to lively community forums – if you get stuck, or just need a hand getting set up, we’re here to make things happen.</p>
+                <button className='mt-10 bg-[#0675c4] text-white flex justify-center items-center w-32 h-12 rounded-md font-medium'>Get help</button>
+              </div>
+              <div>
+                <img src="https://s1.wp.com/wp-content/themes/h4/landing/marketing/pages/hp-2022-oct/media/desktop/built-by-image-2x.webp" alt="" />
+                <h5 className='font-serif text-5xl my-5'>Website design service</h5>
+                <p>Creating a site or store from scratch can take time. Sit back as our expert team builds a site you’ll fall in love with. From single page sites to full-blown stores, we’ll help you make it happen, sooner.</p>
+                <button className='mt-10 bg-[#0675c4] text-white flex justify-center items-center w-32 h-12 rounded-md font-medium'>Get started</button>
+              </div>
+            </div>
+        </div>
+      </section>
+      <section className='bg-[#101517] py-28'>
+        <div className="w-full max-w-6xl max-xl:px-5 mx-auto flex text-white gap-32">
+          <div className='max-w-md'>
+            <img src="https://s1.wp.com/wp-content/themes/h4/landing/marketing/pages/hp-2022-oct/media/desktop/vip-logo.svg" alt="" />
+            <h2 className='text-5xl font-serif'>Think WordPress isn’t for the enterprise? Think again.</h2>
+            <p className='my-8'>What do Salesforce, Al Jazeera, Capgemini, Facebook, and Merck have in common?</p>
+            <p>They trust WordPress VIP—the enterprise platform built on WordPress—to deliver performance at scale while meeting the highest security standards. Starting at US$25,000/year</p>
+            <button className='mt-10 bg-[#0675c4] text-white flex justify-center items-center w-32 h-12 rounded-md font-medium'>Get a demo</button>
+          </div>
+            <div className='xl:-mr-32'>
+              <SearchBar classes={'bg-gray-600 h-20 rounded-b-none text-black text-xl'}/>
+              <img src="https://s1.wp.com/wp-content/themes/h4/landing/marketing/pages/hp-2022-oct/media/desktop/salesforce-2x.webp" alt="" className='rounded-b-xl'/>
+            </div>
         </div>
       </section>
     </>

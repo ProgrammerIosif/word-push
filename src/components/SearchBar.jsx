@@ -43,7 +43,7 @@ const Typewriter = () => {
   }, [activeText, index, isDeleting, speed, strings]);
 
   return (
-    <div className="flex justify-center pl-6 text-3xl">
+    <div className="flex justify-center pl-6">
       <div className="">
         {activeText}
       </div>
@@ -51,9 +51,9 @@ const Typewriter = () => {
   );
 };
 
-function SearchBar() {
+function SearchBar({classes}) {
   return (
-    <div className='relative bg-[#f1f8fe] h-28 w-full rounded-xl mt-16 shadow-lg p-5 flex gap-10'>
+    <div className={`relative bg-[#f1f8fe] h-28 w-full rounded-xl shadow-lg p-5 flex gap-10 ${classes}`}>
       <div className="flex justify-around items-center h-full w-32 ml-6">
         {[0,1,2].map(() =>
           <div className="bg-[#d4dadf] h-5 w-5 rounded-full"></div>
