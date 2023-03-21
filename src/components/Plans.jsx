@@ -165,12 +165,12 @@ function Plans() {
       </div>
 
       {/* table */}
-      <div className='mt-20 flex border-collapse'>
+      <div className='mt-20 grid grid-cols-3 max-xl:w-[800px] gap-y-16 xl:grid-cols-6'>
         {plans.map((plan,idx) => 
           <div className={`flex flex-col border border-r-0 border-gray-200 relative p-5 basis-full ${idx === 2 || idx === 3 ? '-mt-8' : ''}`}>
             <span className={`${idx === 2 || idx === 3 ? '-mt-2 mb-6' : ''}  bg-black text-white font-medium text-xs w-max rounded-sm px-2`}>{idx === 2 ? 'Popular' : idx === 3 ? 'Best for devs' : ''}</span>
             <div className='h-10 flex items-end'>{idx === 3 ? <img src="https://s1.wp.com/wp-content/themes/h4/landing/marketing/pages/_common/components/plan-business/media/cloud-logo.svg"/> :
-                                   idx === 4 ? <img src="https://s1.wp.com/wp-content/themes/h4/landing/marketing/pages/_common/components/plan-ecommerce/media/woo-logo.svg"/> : ''}</div>
+                                                  idx === 4 ? <img src="https://s1.wp.com/wp-content/themes/h4/landing/marketing/pages/_common/components/plan-ecommerce/media/woo-logo.svg"/> : ''}</div>
             <h4 className='text-4xl font-serif'>{plan.name}</h4>
             <p className='text-xs mt-1 h-16'>{plan.description}</p>
             <h5 className='text-5xl font-serif'><sup className='text-base align-top relative top-[1px] mr-1'>€</sup>{activeButton === 'monthly' ? plan.priceM : plan.priceY}</h5>

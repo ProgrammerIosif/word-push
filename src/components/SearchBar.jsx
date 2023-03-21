@@ -53,7 +53,7 @@ const Typewriter = () => {
 
 function SearchBar({classes}) {
   return (
-    <div className={`relative bg-[#f1f8fe] h-28 w-full rounded-xl shadow-lg p-5 flex gap-10 ${classes}`}>
+    <div className={`relative bg-[#f1f8fe] w-full rounded-xl shadow-lg p-5 flex gap-10 ${classes}`}>
       <div className="flex justify-around items-center h-full w-32 ml-6">
         {[0,1,2].map(() =>
           <div className="bg-[#d4dadf] h-5 w-5 rounded-full"></div>

@@ -4,9 +4,9 @@ import ProductsMenu from '../components/ProductsMenu';
 import SearchBar from '../components/SearchBar';
 import Cards from '../components/Cards';
 import Plans from '../components/Plans';
+import JetpackLink from '../components/JetpackLink';
 
 function Index() {
-
   return (
     <>
       <section>
@@ -45,7 +45,7 @@ function Index() {
             <h1 className="font-serif text-7xl">Your home on the web</h1>
             <p className="max-w-xl text-lg font-normal mt-6">Nothing sets your site apart faster than a unique address on the web. From <b>.com</b> to <b>.blog</b>, there’s a one-of-a-kind domain with your name on it. And your first year is free with any annual paid plan.</p>
             <button className="my-12 bg-black text-white flex justify-center items-center w-48 h-12 rounded-md font-medium">Find your domain</button>
-            <SearchBar classes={'text-3xl'}/>
+            <SearchBar classes={'text-3xl h-28'}/>
         </div>
       </section>
       <section className='bg-[#e9eff5] pb-28'>
@@ -82,19 +82,31 @@ function Index() {
             </div>
         </div>
       </section>
-      <section className='bg-[#101517] py-28'>
+      <section className='bg-[#101517] pt-28 pb-16'>
         <div className="w-full max-w-6xl max-xl:px-5 mx-auto flex text-white gap-32">
           <div className='max-w-md'>
             <img src="https://s1.wp.com/wp-content/themes/h4/landing/marketing/pages/hp-2022-oct/media/desktop/vip-logo.svg" alt="" />
-            <h2 className='text-5xl font-serif'>Think WordPress isn’t for the enterprise? Think again.</h2>
+            <h2 className='text-5xl font-serif mt-8'>Think WordPress isn’t for the enterprise? Think again.</h2>
             <p className='my-8'>What do Salesforce, Al Jazeera, Capgemini, Facebook, and Merck have in common?</p>
             <p>They trust WordPress VIP—the enterprise platform built on WordPress—to deliver performance at scale while meeting the highest security standards. Starting at US$25,000/year</p>
             <button className='mt-10 bg-[#0675c4] text-white flex justify-center items-center w-32 h-12 rounded-md font-medium'>Get a demo</button>
           </div>
             <div className='xl:-mr-32'>
-              <SearchBar classes={'bg-gray-600 h-20 rounded-b-none text-black text-xl'}/>
+              <SearchBar classes={'bg-gray-400 h-20 rounded-b-none text-black text-xl'}/>
               <img src="https://s1.wp.com/wp-content/themes/h4/landing/marketing/pages/hp-2022-oct/media/desktop/salesforce-2x.webp" alt="" className='rounded-b-xl'/>
             </div>
+        </div>
+        <div id='banner'></div>
+      </section>
+      <section className='bg-[#2c3338] text-white'>
+        <div className="py-28 w-full max-w-6xl max-xl:px-5 mx-auto">
+          <img src="https://s1.wp.com/wp-content/themes/h4/landing/marketing/pages/hp-2022-oct/media/desktop/jetpack-logo.svg" alt="" />
+          <h1 className="font-serif text-6xl max-w-4xl mt-10">Take the best website builder anywhere with you.</h1>
+          <p className="max-w-xl text-lg font-normal mt-6">The <b> Jetpack App</b> gives you everything you need to create, design, manage, and grow your site from anywhere.</p>
+          <div className='flex gap-5 mt-12'>
+            <JetpackLink app={'Google Play'} bgColor={'white'} color={'black'}/>
+            <JetpackLink app={'App Store'} bgColor={'white'} color={'black'}/>
+          </div>
         </div>
       </section>
     </>
