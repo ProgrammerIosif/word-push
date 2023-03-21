@@ -11,7 +11,7 @@ function Cards() {
       {cards.map((card,idx) =>
         <div className="bg-[#fdfdfd] rounded-xl p-6">
           <div className="h-16 w-16 mb-20 flex items-center justify-center rounded-full bg-black">
-            <img className="h-7 w-7" src={card.img} alt='' />
+            <img width='28' height='28' className="h-7 w-7" src={card.img} alt='' />
           </div>
           <h3 className="text-4xl font-thin font-serif my-3">{card.title}</h3>
           <ul>

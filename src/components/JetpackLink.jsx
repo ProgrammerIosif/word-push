@@ -33,7 +33,7 @@ function JetpackLink({app, bgColor, color}) {
   return (
     <a href={app === 'Google Play' ? 'https://play.google.com/store/apps/details?id=com.jetpack.android' 
                                    : 'https://apps.apple.com/app/apple-store/id1565481562'} target='_blank' 
-      className={`h-12 w-40 rounded-md bg-${bgColor} text-${color} flex items-center justify-center gap-4`}
+      className={`h-12 w-40 rounded-md bg-${bgColor} text-${color} flex items-center justify-center gap-4 border border-white`}
       onMouseEnter={() => setHover(true)} 
       onMouseLeave={() => setHover(false)}>
       <div className="h-5 w-5">

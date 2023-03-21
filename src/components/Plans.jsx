@@ -169,11 +169,11 @@ function Plans() {
         {plans.map((plan,idx) => 
           <div className={`flex flex-col border border-r-0 border-gray-200 relative p-5 basis-full ${idx === 2 || idx === 3 ? '-mt-8' : ''}`}>
             <span className={`${idx === 2 || idx === 3 ? '-mt-2 mb-6' : ''}  bg-black text-white font-medium text-xs w-max rounded-sm px-2`}>{idx === 2 ? 'Popular' : idx === 3 ? 'Best for devs' : ''}</span>
-            <div className='h-10 flex items-end'>{idx === 3 ? <img src="https://s1.wp.com/wp-content/themes/h4/landing/marketing/pages/_common/components/plan-business/media/cloud-logo.svg" alt=''/> :
-                                                  idx === 4 ? <img src="https://s1.wp.com/wp-content/themes/h4/landing/marketing/pages/_common/components/plan-ecommerce/media/woo-logo.svg" alt=''/> : ''}</div>
+            <div className='h-10 flex items-end'>{idx === 3 ? <img src="https://s1.wp.com/wp-content/themes/h4/landing/marketing/pages/_common/components/plan-business/media/cloud-logo.svg" alt='' width='31' height='18'/> :
+                                                  idx === 4 ? <img src="https://s1.wp.com/wp-content/themes/h4/landing/marketing/pages/_common/components/plan-ecommerce/media/woo-logo.svg" alt='' width='30' height='19'/> : ''}</div>
             <h3 className='text-4xl font-serif'>{plan.name}</h3>
             <p className='text-xs mt-1 h-16'>{plan.description}</p>
-            <h5 className='text-5xl font-serif'><sup className='text-base align-top relative top-[1px] mr-1'>€</sup>{activeButton === 'monthly' ? plan.priceM : plan.priceY}</h5>
+            <p className='text-5xl font-serif'><sup className='text-base align-top relative top-[1px] mr-1'>€</sup>{activeButton === 'monthly' ? plan.priceM : plan.priceY}</p>
             <p className='text-xs py-1 text-gray-500'>{idx === 0 ? 'No expiration date' : 'per month, billed ' + activeButton}</p>
             <button  className={`sticky top-2 font-medium ${plan.buttonColor} text-white h-10 rounded-md my-4 text-sm`}>{idx === 0 ? 'Start with Free' : 'Get ' + plan.name}</button>
             <p className={`h-10 py-3 text-xs ${plan.textColor} font-bold`}>{idx != 0 ? `Everything in ${plans[idx-1].name}, plus:` : ''}</p>
@@ -188,21 +188,21 @@ function Plans() {
             <p className='text-xs font-normal py-5'>STORAGE <br /><br/><span className='bg-gray-100 py-2 px-3 text-xs rounded-lg'>{plan.storage} GB</span></p>
           </div>)} 
         <div className='flex flex-col border border-gray-200 relative p-5 basis-full'>
-          <div className='h-10 flex items-end pb-1'><img src="https://s1.wp.com/wp-content/themes/h4/landing/marketing/pages/_common/components/plan-vip/media/vip-logo.svg" alt=''/></div>
+          <div className='h-10 flex items-end pb-1'><img src="https://s1.wp.com/wp-content/themes/h4/landing/marketing/pages/_common/components/plan-vip/media/vip-logo.svg" width='38' height='17' alt=''/></div>
           <h4 className='text-4xl font-serif'>Enterprise</h4>
           <p className='text-xs mt-1 h-16'>Deliver an unmatched performance with the highest security standards on our enterprise content platform.</p>
           <div className='h-12'></div>
           <p className='text-xs py-1'>Starts at <b>US$25,000</b> yearly.</p>
           <button  className='sticky top-2 font-medium bg-[#2c3338] text-white h-10 rounded-md my-4 text-sm'>Get in touch</button>
           <div className='flex flex-wrap gap-4 pt-4'>
-            <img src="https://s1.wp.com/wp-content/themes/h4/landing/marketing/pages/_common/components/plan-vip/media/time-logo.svg" alt="time logo" />
-            <img src="https://s1.wp.com/wp-content/themes/h4/landing/marketing/pages/_common/components/plan-vip/media/slack-logo.svg" alt="slack logo" />
-            <img src="https://s1.wp.com/wp-content/themes/h4/landing/marketing/pages/_common/components/plan-vip/media/disney-logo.svg" alt="disney logo" />
-            <img src="https://s1.wp.com/wp-content/themes/h4/landing/marketing/pages/_common/components/plan-vip/media/cnn-logo.svg" alt="cnn logo" />
-            <img src="https://s1.wp.com/wp-content/themes/h4/landing/marketing/pages/_common/components/plan-vip/media/salesforce-logo.svg" alt="salesforce logo" />
-            <img src="https://s1.wp.com/wp-content/themes/h4/landing/marketing/pages/_common/components/plan-vip/media/facebook-logo.svg" alt="facebook logo" />
-            <img src="https://s1.wp.com/wp-content/themes/h4/landing/marketing/pages/_common/components/plan-vip/media/condenast-logo.svg" alt="condenast logo" />
-            <img src="https://s1.wp.com/wp-content/themes/h4/landing/marketing/pages/_common/components/plan-vip/media/bloomberg-logo.svg" alt="bloomberg logo" />
+            <img width='38' height='27' src="https://s1.wp.com/wp-content/themes/h4/landing/marketing/pages/_common/components/plan-vip/media/time-logo.svg" alt="time logo" />
+            <img width='60' height='27' src="https://s1.wp.com/wp-content/themes/h4/landing/marketing/pages/_common/components/plan-vip/media/slack-logo.svg" alt="slack logo" />
+            <img width='60' height='27' src="https://s1.wp.com/wp-content/themes/h4/landing/marketing/pages/_common/components/plan-vip/media/disney-logo.svg" alt="disney logo" />
+            <img width='40' height='27' src="https://s1.wp.com/wp-content/themes/h4/landing/marketing/pages/_common/components/plan-vip/media/cnn-logo.svg" alt="cnn logo" />
+            <img width='40' height='27' src="https://s1.wp.com/wp-content/themes/h4/landing/marketing/pages/_common/components/plan-vip/media/salesforce-logo.svg" alt="salesforce logo" />
+            <img width='80' height='27' src="https://s1.wp.com/wp-content/themes/h4/landing/marketing/pages/_common/components/plan-vip/media/facebook-logo.svg" alt="facebook logo" />
+            <img width='84' height='27' src="https://s1.wp.com/wp-content/themes/h4/landing/marketing/pages/_common/components/plan-vip/media/condenast-logo.svg" alt="condenast logo" />
+            <img width='69' height='27' src="https://s1.wp.com/wp-content/themes/h4/landing/marketing/pages/_common/components/plan-vip/media/bloomberg-logo.svg" alt="bloomberg logo" />
           </div>
         </div>
       </div>

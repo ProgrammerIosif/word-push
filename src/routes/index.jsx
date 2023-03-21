@@ -85,7 +85,7 @@ function Index() {
       <section className='bg-[#101517] pt-28 pb-16'>
         <div className="w-full max-w-6xl max-xl:px-5 mx-auto flex text-white gap-32">
           <div className='max-w-md'>
-            <img src="https://s1.wp.com/wp-content/themes/h4/landing/marketing/pages/hp-2022-oct/media/desktop/vip-logo.svg" alt="" />
+            <img src="https://s1.wp.com/wp-content/themes/h4/landing/marketing/pages/hp-2022-oct/media/desktop/vip-logo.svg" width='92' height='40' alt="" />
             <h2 className='text-5xl font-serif mt-8'>Think WordPress isn’t for the enterprise? Think again.</h2>
             <p className='my-8'>What do Salesforce, Al Jazeera, Capgemini, Facebook, and Merck have in common?</p>
             <p>They trust WordPress VIP—the enterprise platform built on WordPress—to deliver performance at scale while meeting the highest security standards. Starting at US$25,000/year</p>
@@ -100,7 +100,7 @@ function Index() {
       </section>
       <section className='bg-[#2c3338] text-white'>
         <div className="py-28 w-full max-w-6xl max-xl:px-5 mx-auto">
-          <img src="https://s1.wp.com/wp-content/themes/h4/landing/marketing/pages/hp-2022-oct/media/desktop/jetpack-logo.svg" alt="" />
+          <img src="https://s1.wp.com/wp-content/themes/h4/landing/marketing/pages/hp-2022-oct/media/desktop/jetpack-logo.svg" width='118' height='33' alt="" />
           <h2 className="font-serif text-6xl max-w-4xl mt-10">Take the best website builder anywhere with you.</h2>
           <p className="max-w-xl text-lg font-normal mt-6">The <b> Jetpack App</b> gives you everything you need to create, design, manage, and grow your site from anywhere.</p>
           <div className='flex gap-5 mt-12'>
