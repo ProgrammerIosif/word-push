@@ -11,11 +11,11 @@ function Cards() {
       {cards.map((card,idx) =>
         <div className="bg-[#fdfdfd] rounded-xl p-6">
           <div className="h-16 w-16 mb-20 flex items-center justify-center rounded-full bg-black">
-            <img className="h-7 w-7" src={card.img} alt="" />
+            <img className="h-7 w-7" src={card.img} alt='' />
           </div>
-          <h6 className="text-4xl font-thin font-serif my-3">{card.title}</h6>
+          <h3 className="text-4xl font-thin font-serif my-3">{card.title}</h3>
           <ul>
-            {card.list.map((item) => <p className="text-sm flex mt-4 gap-1 before:content-[url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTQiIHZpZXdCb3g9IjAgMCAxNCAxNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTcgMEMzLjEzNTQyIDAgMCAzLjEzNTQyIDAgN0MwIDEwLjg2NDYgMy4xMzU0MiAxNCA3IDE0QzEwLjg2NDYgMTQgMTQgMTAuODY0NiAxNCA3QzE0IDMuMTM1NDIgMTAuODY0NiAwIDcgMFpNMTAuNjAyMSA1LjMwODMzTDYuNDg5NTggOS40MzU0MkM2LjM1ODM2IDkuNTY2NjQgNi4xNjg3NSA5LjY1NDEyIDUuOTc5MTIgOS42NTQxMkM1Ljc4OTQ4IDkuNjU0MTIgNS41OTk5NyA5LjU4MTE5IDUuNDY4NjUgOS40MzU0MkwzLjM5NzkyIDcuMzY0NThDMy4xMDYyOCA3LjA3Mjk0IDMuMTA2MjggNi42MjA4NiAzLjM5NzkyIDYuMzI5MTFDMy42ODk1NiA2LjAzNzQ3IDQuMTQxNjQgNi4wMzc0NyA0LjQzMzM5IDYuMzI5MTFMNS45NzkxOSA3Ljg3NDkyTDkuNTgxMjggNC4yNzI4NEM5Ljg3MjkyIDMuOTgxMiAxMC4zMjUgMy45ODEyIDEwLjYxNjcgNC4yNzI4NEMxMC44OTM4IDQuNTY0NTggMTAuODkzOCA1LjAxNjY0IDEwLjYwMjEgNS4zMDgzMUwxMC42MDIxIDUuMzA4MzNaIiBmaWxsPSIjMTY4OURCIi8+Cjwvc3ZnPgo=)]">{item}</p>)}
+            {card.list.map((item) => <li className="text-sm flex mt-4 gap-1 before:content-[url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTQiIHZpZXdCb3g9IjAgMCAxNCAxNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTcgMEMzLjEzNTQyIDAgMCAzLjEzNTQyIDAgN0MwIDEwLjg2NDYgMy4xMzU0MiAxNCA3IDE0QzEwLjg2NDYgMTQgMTQgMTAuODY0NiAxNCA3QzE0IDMuMTM1NDIgMTAuODY0NiAwIDcgMFpNMTAuNjAyMSA1LjMwODMzTDYuNDg5NTggOS40MzU0MkM2LjM1ODM2IDkuNTY2NjQgNi4xNjg3NSA5LjY1NDEyIDUuOTc5MTIgOS42NTQxMkM1Ljc4OTQ4IDkuNjU0MTIgNS41OTk5NyA5LjU4MTE5IDUuNDY4NjUgOS40MzU0MkwzLjM5NzkyIDcuMzY0NThDMy4xMDYyOCA3LjA3Mjk0IDMuMTA2MjggNi42MjA4NiAzLjM5NzkyIDYuMzI5MTFDMy42ODk1NiA2LjAzNzQ3IDQuMTQxNjQgNi4wMzc0NyA0LjQzMzM5IDYuMzI5MTFMNS45NzkxOSA3Ljg3NDkyTDkuNTgxMjggNC4yNzI4NEM5Ljg3MjkyIDMuOTgxMiAxMC4zMjUgMy45ODEyIDEwLjYxNjcgNC4yNzI4NEMxMC44OTM4IDQuNTY0NTggMTAuODkzOCA1LjAxNjY0IDEwLjYwMjEgNS4zMDgzMUwxMC42MDIxIDUuMzA4MzNaIiBmaWxsPSIjMTY4OURCIi8+Cjwvc3ZnPgo=)]">{item}</li>)}
           </ul>
         </div>)}
     </div>

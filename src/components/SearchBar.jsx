@@ -60,7 +60,7 @@ function SearchBar({classes}) {
         )}
       </div>
       <div className="bg-white w-full h-full rounded-xl flex justify-start items-center px-6">
-        <img src="https://cdn-icons-png.flaticon.com/512/1828/1828471.png" alt="" className="h-6" />
+        <img width='24' height='24' src="https://cdn-icons-png.flaticon.com/512/1828/1828471.png" alt='' className="h-6" />
         <Typewriter/>
       </div>
     </div>

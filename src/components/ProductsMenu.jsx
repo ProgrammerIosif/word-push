@@ -9,18 +9,6 @@ const items = [
 ];
 
 function ProductsMenu() {
-  // return (
-  //   <div className="mt-24 flex justify-between">
-  //     <ul className="w-80 text-[#707374] text-3xl font-light flex flex-col justify-start gap-5">
-  //       <li className=" hover:text-white hover:underline underline-offset-4 ">Blog</li>
-  //       {items.map((item,idx) => 
-  //         }
-  //     </ul>
-  //     <div className="">
-
-  //     </div>
-  //   </div>
-  // )
   const [selected, setSelected] = useState(0);
 
   const handleSelection = (index) => {
@@ -50,9 +38,11 @@ function ProductsMenu() {
       <div className="w-2/3 relative aspect-[8/5]">
         {items.map((image, index) => (
           <img
+            width='800'
+            height='500'
             key={index}
             src={image.link}
-            alt={image.name}
+            alt=''
             className={`absolute w-full opacity-${
               items[selected].link === image.link ? '100' : '0'
             } transition-opacity duration-500`}

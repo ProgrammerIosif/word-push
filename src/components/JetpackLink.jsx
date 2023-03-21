@@ -41,7 +41,7 @@ function JetpackLink({app, bgColor, color}) {
       </div>
       <div>
         <p className="text-xs font-semibold -mb-1">{app === 'Google Play' ? 'Get it on' : 'Download on the'}</p>
-        <h6 className={`text-lg font-bold -mt-1 ${hover ? 'underline' : ''}`}>{app}</h6>
+        <p className={`text-lg font-bold -mt-1 ${hover ? 'underline' : ''}`}>{app}</p>
 
       </div>
     </a>

@@ -35,12 +35,14 @@ function ImageSlider() {
       <div className="relative w-[93%] xl:w-[100%] aspect-[10/6.5] border-[12px] border-[#f2f2f2] rounded-3xl mt-16">
         {images.map((image, index) => (
           <img
+            width='1200'
+            height='750'
             key={index}
             className={`absolute top-0 left-0 w-full h-full transition-opacity duration-1000 rounded-lg ${
               index === currentIndex ? 'opacity-100' : 'opacity-0'
             }`}
             src={image}
-            alt={`Slider image ${index}`}
+            alt=''
           />
         ))}
         <div className='absolute -right-20 top-12 w-40 h-24 bg-[#f2f2f2]/40 backdrop-blur-xl rounded-xl shadow-md'>

@@ -15,10 +15,12 @@ function Nav() {
     <>
     <div className='h-14 flex justify-between px-6 text-lg font-semibold text-[#003C56]'>
       <ul className="flex">
-        <Link to="/" className='flex mr-5 pb-0.5 gap-1 py-[11px]'>
-            <img className='h-7' src="https://cdn-icons-png.flaticon.com/512/49/49006.png" alt=""/>
-            <h2 className='font-medium text-xl'>WordPush.com</h2>
-        </Link>
+        <li>
+          <Link to="/" className='flex mr-5 pb-0.5 gap-1 py-[11px]'>
+              <img width='28' height='28' className='h-7' src="https://cdn-icons-png.flaticon.com/512/49/49006.png" alt=""/>
+              <h2 className='font-medium text-xl'>WordPush.com</h2>
+          </Link>
+        </li>
         {itemsWithDropdown.map((item,idx) => (
             <li className="after:content-['▾'] pr-5 cursor-pointer py-3" 
                 onMouseEnter={() => {setDropdownIdx(idx+1),setDropdownVisibility(true)}}
