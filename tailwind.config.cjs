@@ -5,9 +5,9 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   safelist: [
-    'left-[152px]',
-    'left-[256px]',
-    'left-[370px]'
+    'left-[178px]',
+    'left-[286px]',
+    'left-[404px]'
   ],
   theme: {
     extend: {

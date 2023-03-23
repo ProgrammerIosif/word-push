@@ -10,6 +10,7 @@ import "./index.css";
 import Root from "./routes/root";
 import Index from './routes';
 import Hosting from './routes/hosting';
+import Features from './routes/features';
 
 const router = createBrowserRouter([
   {
@@ -22,8 +23,12 @@ const router = createBrowserRouter([
       },
       {
         path: "hosting",
-        element: <Hosting />,
+        element: <Hosting />
       },
+      {
+        path: "features",
+        element: <Features />
+      }
     ],
   },
 ]);

@@ -21,7 +21,7 @@ function Dropdown(props) {
         </>
       case 2:
         return <>
-          <li className={liClasses}>Overview</li>
+          <Link className={liClasses} to='/features'>Overview</Link>
           <li><hr className="my-2"/></li>
           <li className={liClasses}>WordPress Themes</li>
           <li className={liClasses}>WordPress Plugins</li>

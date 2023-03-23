@@ -1,3 +1,4 @@
+import Nav from '../components/Nav';
 import ImageSlider from '../components/ImageSlider';
 import ImageGrid from '../components/ImageGrid';
 import ProductsMenu from '../components/ProductsMenu';
@@ -9,6 +10,7 @@ import JetpackLink from '../components/JetpackLink';
 function Index() {
   return (
     <>
+      <Nav textColor='text-[#003C56]'/> 
       <section>
         <div className="pt-32 w-full max-w-6xl max-xl:px-5 mx-auto">
             <h1 className="font-serif text-7xl"><span className="">Welcome to the world’s</span><br /><span>most popular website builder.</span></h1>
