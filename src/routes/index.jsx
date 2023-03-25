@@ -1,11 +1,12 @@
 import Nav from '../components/Nav';
-import ImageSlider from '../components/ImageSlider';
-import ImageGrid from '../components/ImageGrid';
-import ProductsMenu from '../components/ProductsMenu';
-import SearchBar from '../components/SearchBar';
-import Cards from '../components/Cards';
-import Plans from '../components/Plans';
 import JetpackLink from '../components/JetpackLink';
+
+import ImageSlider from '../components/index/ImageSlider';
+import ImageGrid from '../components/index/ImageGrid';
+import ProductsMenu from '../components/index/ProductsMenu';
+import SearchBar from '../components/index/SearchBar';
+import Cards from '../components/index/Cards';
+import Plans from '../components/index/Plans';
 
 function Index() {
   return (

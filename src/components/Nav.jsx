@@ -33,7 +33,7 @@ function Nav({textColor}) {
       </ul>
       <div className="flex">
         <button>Log In</button>
-        <button className="ml-8 my-2 px-3 border rounded-md border-[#003C56]">Get Started</button> 
+        <button className="ml-8 my-2 px-3 border rounded-md">Get Started</button> 
       </div>
     </div>
     <Dropdown render={dropdownVisibility} idx={dropdownIdx} y={dropdownIdx === 0 ? 0 : itemsWithDropdown[dropdownIdx-1].y}/>
