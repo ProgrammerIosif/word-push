@@ -14,7 +14,7 @@ function Dropdown(props) {
           <Link className={liClasses} to='/hosting'>Domain Names</Link>
           <Link className={liClasses} to='/hosting'>Website Builder</Link>
           <Link className={liClasses} to='/hosting'>Create a Blog</Link>
-          <Link className={liClasses} to='/hosting'>Professional Email</Link>
+          <Link className={liClasses} to='/professional-email'>Professional Email</Link>
           <Link className={liClasses} to='/hosting'>Website Design Services</Link>
           <li><hr className="my-2"/></li>
           <li className={liClasses}>Enterprise</li>

@@ -11,6 +11,7 @@ import Root from "./routes/root";
 import Index from './routes';
 import Hosting from './routes/hosting';
 import Features from './routes/features';
+import Email from './routes/email';
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
       {
         path: "features",
         element: <Features />
+      },
+      {
+        path: "professional-email",
+        element: <Email />
       }
     ],
   },

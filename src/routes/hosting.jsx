@@ -102,7 +102,7 @@ const features = [
 function Hosting() {
   return (
     <>
-      <div className="bg-gradient-to-b from-[#0b4f7b] to-[#101517] text-white">
+      <section className="bg-gradient-to-b from-[#0b4f7b] to-[#101517] text-white">
         <Nav textColor='text-white'/>  
         <div className="pt-24 w-full max-w-4xl max-xl:px-5 mx-auto pb-20">
           <h1>HOSTING</h1>
@@ -111,8 +111,8 @@ function Hosting() {
           <p className="text-lg font-normal mt-4">Meet WordPress.com managed hosting.</p>
           <button className="mt-6 bg-white text-black flex justify-center items-center w-36 h-12 rounded-md">Get Started</button>
         </div>
-      </div>
-      <div className='bg-[#101517] text-white'>
+      </section>
+      <section className='bg-[#101517] text-white'>
         {features.map(section => 
           <div className='w-full max-w-4xl max-xl:px-5 mx-auto py-10'>
             <h3 className='uppercase text-[#1689db] font-semibold'>{section.title}</h3>
@@ -173,18 +173,16 @@ function Hosting() {
             </div>
           </div>
         </div>
-      </div>
-      <div className='bg-gradient-to-b from-[#101517] via-[#085891] to-white text-white'>
+      </section>
+      <section className='bg-gradient-to-b from-[#101517] via-[#085891] to-white text-white'>
         <div className="pt-24 w-full max-w-4xl max-xl:px-5 mx-auto pb-20 flex flex-col items-center">
           <h2 className="font-serif text-6xl mt-5">Pick a plan and start building</h2>
           <p className="text-lg font-normal mt-6">Whatever you’re building, do it on top of the world’s best managed WordPress</p>
           <p className='text-lg font-normal'>hosting stack. No overages. No metering. No surprises.</p>
           <Plans/>
         </div>
-
-      </div>
+      </section>
     </>
-
   )
 }
 
