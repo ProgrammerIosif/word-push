@@ -2,6 +2,49 @@ import Nav from "../components/Nav";
 
 import SearchBar from "../components/email/SearchBar";
 
+const perks = [
+  {
+    title: '30 GB storage',
+    text: 'The most space, for the best value.',
+    img: 'https://s1.wp.com/wp-content/themes/h4/assets/titan-promo/icon-gray-cloud.svg'
+  },
+  {
+    title: 'Guaranteed email delivery',
+    text: 'Peace of mind with  99.98% uptime.',
+    img: 'https://s1.wp.com/wp-content/themes/h4/assets/titan-promo/icon-gray-cloud.svg'
+  },
+  {
+    title: 'IMAP, POP3, SMTP support',
+    text: 'Full support for all email server settings.',
+    img: 'https://s1.wp.com/wp-content/themes/h4/assets/titan-promo/icon-gray-cloud.svg'
+  },
+  {
+    title: 'Advanced security',
+    text: 'Data encryption, spam, and virus protection.',
+    img: 'https://s1.wp.com/wp-content/themes/h4/assets/titan-promo/icon-gray-cloud.svg'
+  },
+  {
+    title: 'Email templates',
+    text: 'Send new emails without starting from scratch.',
+    img: 'https://s1.wp.com/wp-content/themes/h4/assets/titan-promo/icon-gray-cloud.svg'
+  },
+  {
+    title: 'Signature builder',
+    text: 'Create your own signature.',
+    img: 'https://s1.wp.com/wp-content/themes/h4/assets/titan-promo/icon-gray-cloud.svg'
+  },
+  {
+    title: 'Scheduled sending',
+    text: 'Take control of when your emails land.',
+    img: 'https://s1.wp.com/wp-content/themes/h4/assets/titan-promo/icon-gray-cloud.svg'
+  },
+  {
+    title: 'Advanced search',
+    text: 'Search for anything, find everything.',
+    img: 'https://s1.wp.com/wp-content/themes/h4/assets/titan-promo/icon-gray-cloud.svg'
+  }
+]
+
 function Email() {
   return (
     <>
@@ -66,6 +109,72 @@ function Email() {
           </div>
           <button className="my-5 bg-[#f5e6b3] text-black flex justify-center items-center w-40 h-12 rounded-md">Get started</button>
           <p>Choose a domain. Add an email address. Own your online brand.</p>
+        </div>
+      </section>
+      <section>
+        <div className="py-24 w-full max-w-6xl max-xl:px-5 mx-auto">
+          <h2 className="font-serif text-6xl font-light text-[#2c3338]">Supercharge your email.</h2>
+          <div className="grid grid-cols-4 py-16 gap-24">
+            {perks.map(item => 
+              <div> 
+                <img src={item.img} alt="" />
+                <h3 className="font-medium text-lg pr-24 py-3">{item.title}</h3>
+                <p className="text-gray-500">{item.text}</p>
+              </div>)}
+          </div>
+          <div className="flex justify-center gap-3 text-gray-500 pb-12">Professional Email is powered by<img src="https://assets.a8c.vercel.app/static/titan-promo/logo-titan.svg" alt="" /></div>
+        </div>
+      </section>
+      <section className="bg-[#bbe0fa]">
+        <div className="py-24 w-full max-w-6xl max-xl:px-5 mx-auto">
+          <h2 className="font-serif text-6xl pb-20">Communicate like a pro.</h2>
+          <div className="grid gap-24 grid-cols-2">
+            <div>
+              <img className="rounded-xl" src="https://s1.wp.com/wp-content/themes/h4/assets/titan-promo/inbox@2x.jpg" alt="" />
+              <h3 className="font-semibold text-3xl my-5">Access anywhere</h3>
+              <p>With the Titan App for Professional Email, access your email, calendar, and contacts anytime and anywhere.</p>
+            </div>
+            <div className="pr-12">
+              <img className="rounded-xl" src="https://wpcom.files.wordpress.com/2021/08/multiple-addresses402x.png" alt="" />
+              <h3 className="font-semibold text-3xl my-5">Manage multiple inboxes</h3>
+              <p>Working with multiple email addresses? Access them all from one place without jumping tabs or logging in and out.</p>
+            </div>
+          </div>
+          <img className="max-w-5xl rounded-xl pt-24" src="https://wpcom.files.wordpress.com/2021/07/calypso-mailbox402x.png" alt="" />
+          <h3 className="font-semibold text-3xl my-5">Baked right into WordPress.com</h3>
+          <p>Manage your email, domain, and websites from a single dashboard. </p>
+        </div>
+      </section>
+      <section>
+        <div className="py-24 w-full max-w-6xl max-xl:px-5 mx-auto text-[#055d9c] flex flex-col items-center">
+          <h2 className="text-6xl font-serif mb-20">Try it free for 3 months</h2>
+          <div className="grid grid-cols-3 gap-24">
+            {[{
+                img: 'https://s1.wp.com/wp-content/themes/h4/assets/titan-promo/step-create-account.svg',
+                nr: 'ONE',
+                title: 'Create an account.',
+                text: 'Create your WordPress.com account to start your onboarding.'
+              },
+              {
+                img: 'https://s1.wp.com/wp-content/themes/h4/assets/titan-promo/step-choose-domain.svg',
+                nr: 'TWO',
+                title: 'Choose a domain.',
+                text: 'Choose a domain address. Remember that this will also be used for your email address.'
+              },
+              {
+                img: 'https://s1.wp.com/wp-content/themes/h4/assets/titan-promo/step-add-email.svg',
+                nr: 'THREE',
+                title: 'Add a Professional Email.',
+                text: 'Add a Professional Email to start your 3-months free trial.'
+              }].map(item => 
+                <div>
+                  <img src={item.img} alt="" /> 
+                  <p className="mt-6">STEP {item.nr}</p>
+                  <h3 className="font-bold">{item.title}</h3>
+                  <p className="mt-3 text-gray-500">{item.text}</p>
+                </div>)}
+          </div>
+          <button className="mt-20 bg-sky-600 text-white w-32 h-12">Let's go!</button>
         </div>
       </section>
     </>
