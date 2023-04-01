@@ -1,6 +1,7 @@
 import Nav from "../components/Nav";
 
 import SearchBar from "../components/email/SearchBar";
+import { memo } from "react";
 
 const perks = [
   {
@@ -48,7 +49,7 @@ const perks = [
 function Email() {
   return (
     <>
-      <Nav />  
+      <Nav />
       <section className="">
         <div className="py-24 w-full max-w-6xl max-xl:px-5 mx-auto flex justify-between">
           <div className="flex flex-col justify-center">
@@ -115,8 +116,8 @@ function Email() {
         <div className="py-24 w-full max-w-6xl max-xl:px-5 mx-auto">
           <h2 className="font-serif text-6xl font-light text-[#2c3338]">Supercharge your email.</h2>
           <div className="grid grid-cols-4 py-16 gap-24">
-            {perks.map(item => 
-              <div> 
+            {perks.map(item =>
+              <div>
                 <img src={item.img} alt="" />
                 <h3 className="font-medium text-lg pr-24 py-3">{item.title}</h3>
                 <p className="text-gray-500">{item.text}</p>
@@ -166,15 +167,101 @@ function Email() {
                 nr: 'THREE',
                 title: 'Add a Professional Email.',
                 text: 'Add a Professional Email to start your 3-months free trial.'
-              }].map(item => 
+              }].map(item =>
                 <div>
-                  <img src={item.img} alt="" /> 
+                  <img src={item.img} alt="" />
                   <p className="mt-6">STEP {item.nr}</p>
                   <h3 className="font-bold">{item.title}</h3>
                   <p className="mt-3 text-gray-500">{item.text}</p>
                 </div>)}
           </div>
           <button className="mt-20 bg-sky-600 text-white w-32 h-12">Let's go!</button>
+        </div>
+      </section>
+      <section className="bg-[#f6f7f7]">
+        <div className="py-32 w-full max-w-xl max-xl:px-5 mx-auto">
+          <h2 className="font-serif text-6xl text-center text-gray-800">Migrate seamlessly. Don’t lose a beat.</h2>
+          <p className="font-normal mt-6 text-gray-500 text-center">Bring your emails and contacts with you from other platforms and existing accounts. Professional Email makes pulling your old account data into your new inbox a breeze with its simple built-in migration tool.</p>
+        </div>
+      </section>
+      <section className="bg-[#e4f2ed]">
+        <div className="py-32 w-full max-w-6xl max-xl:px-5 mx-auto">
+          <h2 className="font-serif text-6xl">Your happiness. Our pleasure.</h2>
+          <div className="grid grid-cols-3 gap-10 mt-12 text-gray-500 h-28">
+            {[{text: 'It is a really good service of mail. It is a functional, reliable, well-built service. The look is also really nice!',
+               author: 'Stefano Marchesotti'},
+              {text: 'I used Gmail before and Titan is for me a very good email tool, I do not miss Gmail!',
+               author: 'Graziano Nigro'},
+              {text: 'Managing emails is simple, so is viewing emails. the possibility of having several addresses clearly visible at the same time is great.',
+               author: 'Guylaine'}].map(item =>
+                <div className="flex flex-col justify-between bg-white">
+                  <p>"{item.text}"</p>
+                  <p className="font-semibold">{item.author}</p>
+                </div>)}
+          </div>
+        </div>
+      </section>
+      <section className="bg-[#e9f0f5]">
+        <div className="py-32 w-full max-w-6xl max-xl:px-5 mx-auto flex flex-col items-center">
+          <h2 className="font-serif text-6xl text-[#044b7a]">Use the best email service.</h2>
+          <p className="font-normal mt-6 text-gray-500 text-lg">Professional Email’s platform, Titan, is the highest-rated email service for small business owners</p>
+          <img src="https://wpcom.files.wordpress.com/2022/08/group-22672.png" alt="" width='410' height='63' className="py-8"/>
+          <img src="https://wpcom.files.wordpress.com/2022/08/group-22671.png" alt="" width='530' height='120'/>
+        </div>
+      </section>
+      <section>
+        <div className="py-32 w-full max-w-6xl max-xl:px-5 mx-auto">
+          <h2 className="font-serif text-6xl text-gray-800">You asked, we answered.</h2>
+          <p className="font-normal mt-6 text-gray-500 text-lg">Learn more about Professional Email and the 3-month free trial.</p>
+          <div className="grid grid-cols-2 grid-rows-3 gap-x-24 gap-y-16 text-gray-500 mt-20">
+            {[{title: 'What is WordPress.com?',
+               text: 'Built by the people who created open-source WordPress software – which powers 42% of the websites on the internet – WordPress.com is the most flexible and powerful website building platform in the world.'},
+              {title: 'Do I need a domain?',
+               text: 'Yes. Your domain determines your Professional Email address – youremail@yourdomain.com. With your custom domain, you can both create a Professional Email account and set yourself apart.'},
+              {title: 'What is Professional Email?',
+               text: 'Professional Email is an email platform built by Titan, a strategic partner of Automattic (the creators of WordPress.com). With a custom email address and feature-rich web and mobile apps, Professional Email enables you to work smarter and more efficiently over email.'},
+              {title: 'I already have a domain somewhere. How can I get Professional Email?',
+               text: 'Once you create your account and transfer your domain into WordPress.com you can navigate to Upgrades > Emails to try Professional Email for free for 3 months.'},
+              {title: 'How can I start using the 3-month free trial?',
+               text: 'As an exclusive offer, you can try Professional Email free for 3 months when you purchase any new domain with WordPress.com. After the 3 months, your Professional Email account will renew at the regular price. ',},
+              {title: 'I’m looking for some collaboration tools beyond email, calendar and contacts? Do you offer other product options?',
+               text: 'Of course. If you’re looking for a collaboration suite, we also offer Google Workspace.'}].map(item =>
+                <div>
+                  <h3 className="font-bold text-lg mb-4 text-black">{item.title}</h3>
+                  <p>{item.text}</p>
+                </div>)}
+          </div>
+        </div>
+      </section>
+      <section className="bg-[#e4f2ed] text-[#005c44]">
+        <div className="py-32 w-full max-w-6xl max-xl:px-5 mx-auto flex gap-20">
+          <div className="flex flex-col justify-center gap-6">
+            <p>BEST IN CLASS</p>
+            <h2 className="font-serif text-6xl">24/7 Support</h2>
+            <p className="text-lg -mb-3">Get hands-on support from our experts through email or live chat.</p>
+            <p className="text-lg">Whether you’re migrating from another provider or trying to create multiple email accounts we can always help. We’re excited to help you build and own your piece of the web.</p>
+            <p className="font-medium underline text-lg">Visit our support center {'>'}</p>
+          </div>
+          <img src="https://s1.wp.com/wp-content/themes/h4/assets/titan-promo/support@2x.jpg" alt="" width='528' height='428'/>
+        </div>
+      </section>
+      <section className="bg-[#facfd2] text-[#4d2054]">
+        <div className="py-32 w-full max-w-6xl max-xl:px-5 mx-auto">
+          <h2 className="font-serif text-6xl">Create your professional online presence.</h2>
+          <div className="grid grid-cols-2 gap-32 text-lg mt-16">
+            <div>
+              <img className="rounded-xl" src="https://s1.wp.com/wp-content/themes/h4/assets/titan-promo/plans@2x.jpg" alt=""/>
+              <h3 className="text-3xl font-semibold mb-5 mt-8">Website plans for everyone.</h3>
+              <p>We’ve got plans for book clubs, businesspeople, bird fanciers, Bond impersonators, bed and breakfast owners, sellers, and anyone else who wants to get online.</p>
+              <p className="mt-4 font-semibold underline">Explore plans {'>'}</p>
+            </div>
+            <div>
+              <img src="https://s1.wp.com/wp-content/themes/h4/assets/titan-promo/domains@2x.jpg" alt=""/>
+              <h3 className="text-3xl font-semibold mb-5 mt-8">Domains for anything.</h3>
+              <p>From .com to .club, or whatever else you can dream up, there’s a memorable — and apt! — domain for your site.</p>
+              <p className="mt-4 font-semibold underline">Find your domain {'>'}</p>
+            </div>
+          </div>
         </div>
       </section>
     </>
