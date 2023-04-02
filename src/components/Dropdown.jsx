@@ -11,7 +11,7 @@ function Dropdown(props) {
       case 1:
         return <>
           <Link className={liClasses} to='/hosting'>WordPress Hosting</Link>
-          <Link className={liClasses} to='/hosting'>Domain Names</Link>
+          <Link className={liClasses} to='/domains'>Domain Names</Link>
           <Link className={liClasses} to='/hosting'>Website Builder</Link>
           <Link className={liClasses} to='/hosting'>Create a Blog</Link>
           <Link className={liClasses} to='/professional-email'>Professional Email</Link>
@@ -27,7 +27,7 @@ function Dropdown(props) {
           <li className={liClasses}>WordPress Plugins</li>
           <li className={liClasses}>Google Apps</li>
         </>
-      case 3: 
+      case 3:
         return <>
           <li className={liClasses}>WordPress.com Support</li>
           <li className={liClasses}>News</li>
@@ -37,7 +37,7 @@ function Dropdown(props) {
         </>
     }
   }
-  
+
   return (
     <div className={`w-56 fixed top-10 left-[${y}px] transition-all ease-out duration-300 ${render || hover ? '' : 'hidden'} pt-4`}
 

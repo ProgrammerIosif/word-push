@@ -49,7 +49,7 @@ function Email() {
   return (
     <>
       <Nav />
-      <section className="">
+      <section>
         <div className="py-24 w-full max-w-6xl max-xl:px-5 mx-auto flex justify-between">
           <div className="flex flex-col justify-center">
             <h1 className="font-serif text-6xl text-[#055d9c]">Stand out with<br />Professional Email.</h1>
