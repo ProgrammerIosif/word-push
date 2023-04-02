@@ -1,7 +1,6 @@
 import Nav from "../components/Nav";
 
 import SearchBar from "../components/email/SearchBar";
-import { memo } from "react";
 
 const perks = [
   {
@@ -261,6 +260,16 @@ function Email() {
               <p>From .com to .club, or whatever else you can dream up, there’s a memorable — and apt! — domain for your site.</p>
               <p className="mt-4 font-semibold underline">Find your domain {'>'}</p>
             </div>
+          </div>
+        </div>
+      </section>
+      <section className="bg-[#055d9c] text-white">
+        <div className="py-32 w-full max-w-6xl max-xl:px-5 mx-auto relative">
+          <div className="bg-[url('https://s1.wp.com/wp-content/themes/h4/assets/logo-outlines/720.svg')] invert bg-no-repeat bg-right opacity-20 absolute -left-40 top-0 h-full w-[720px]"></div>
+          <div className="relative left-1/2 ml-20 w-2/5">
+            <h2 className="font-serif text-6xl max-w-sm mb-8">Your domain. Your email. Your website.</h2>
+            <p>WordPress powers more than 42% of the web. Join the <br/> community. We’re committed to helping you succeed.</p>
+            <button className="bg-[#c9356e] p-3 rounded mt-8">Get started today</button>
           </div>
         </div>
       </section>
