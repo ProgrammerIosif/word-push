@@ -70,21 +70,21 @@ function Email() {
           <h2 className="font-serif text-6xl text-[#055d9c]">Your email. Your identity.</h2>
           <p className="font-normal mt-6 text-gray-500 mb-20">Build your brand with every email you send. Starting from $3.50/month/mailbox.*</p>
           <div className="grid grid-cols-3 gap-20 text-gray-500 mb-14">
-            <div className="">
-              <img src="https://s1.wp.com/wp-content/themes/h4/assets/titan-promo/icon-blue-copyright.svg" alt="" />
-              <h3 className="text-[#044b7a] font-bold text-lg pt-5 pb-3">Look professional.</h3>
-              <p>With a custom email address (i.e. hello@artfulbaker.blog) they’ll know you mean business.</p>
-            </div>
-            <div>
-              <img src="https://s1.wp.com/wp-content/themes/h4/assets/titan-promo/icon-blue-checkmarks.svg" alt="" />
-              <h3 className="text-[#044b7a] font-bold text-lg pt-5 pb-3">Build trust.</h3>
-              <p>Leave generic email addresses behind and project a confident, trust-building image to everyone who gets in touch.</p>
-            </div>
-            <div>
-              <img src="https://s1.wp.com/wp-content/themes/h4/assets/titan-promo/icon-blue-fingerprint.svg" alt="" />
-              <h3 className="text-[#044b7a] font-bold text-lg pt-5 pb-3">Strengthen your brand.</h3>
-              <p>A customized email address reinforces your brand with every email you send.</p>
-            </div>
+            {[{img: 'https://s1.wp.com/wp-content/themes/h4/assets/titan-promo/icon-blue-copyright.svg',
+               title: 'Look professional.',
+               text: 'Grab your domain name now so you don’t have to compromise later. Your domain is the starting step to a strong brand.'},
+              {img: 'https://s1.wp.com/wp-content/themes/h4/assets/titan-promo/icon-blue-checkmarks.svg',
+               title: 'Build trust.',
+               text: 'Grab your domain name now so you don’t have to compromise later. Your domain is the starting step to a strong brand.'},
+              {img: 'https://s1.wp.com/wp-content/themes/h4/assets/titan-promo/icon-blue-fingerprint.svg',
+               title: 'Strengthen your brand.',
+               text: 'Grab your domain name now so you don’t have to compromise later. Your domain is the starting step to a strong brand.'}
+             ].map(item =>
+                <div>
+                  <img src={item.img} alt=""/>
+                  <h3 className="text-[#044b7a] font-bold text-lg pt-5 pb-3">{item.title}</h3>
+                  <p>{item.text}</p>
+                </div>)}
           </div>
           <p className="text-gray-500">* Prices change based on region and exclude your domain name.</p>
         </div>

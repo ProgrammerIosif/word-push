@@ -27,7 +27,7 @@ function SearchwithImage() {
   }
 
   return (
-    <div className='relative'>
+    <div className='relative ml-24'>
       <div className='w-[295px] h-[454px]'>
         {images.map((image, idx) => (
           <img
