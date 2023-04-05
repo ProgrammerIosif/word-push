@@ -32,7 +32,7 @@ function Dropdown(props) {
           <li className={liClasses}>WordPress.com Support</li>
           <li className={liClasses}>News</li>
           <li className={liClasses}>Website Building Tips</li>
-          <li className={liClasses}>Bussines Name Generator</li>
+          <Link className={liClasses} to='/business-name-generator'>Bussines Name Generator</Link>
           <li className={liClasses}>Logo Maker</li>
         </>
     }

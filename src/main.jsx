@@ -13,6 +13,7 @@ import Hosting from './routes/hosting';
 import Features from './routes/features';
 import Email from './routes/email';
 import Domains from './routes/domains';
+import NameGenerator from './routes/nameGenerator';
 
 const router = createBrowserRouter([
   {
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
       {
         path: "domains",
         element: <Domains />
+      },
+      {
+        path: "business-name-generator",
+        element: <NameGenerator />
       }
     ],
   },
