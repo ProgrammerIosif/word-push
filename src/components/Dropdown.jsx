@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 function Dropdown(props) {
@@ -12,28 +12,28 @@ function Dropdown(props) {
         return <>
           <Link className={liClasses} to='/hosting'>WordPress Hosting</Link>
           <Link className={liClasses} to='/domains'>Domain Names</Link>
-          <Link className={liClasses} to='/hosting'>Website Builder</Link>
-          <Link className={liClasses} to='/hosting'>Create a Blog</Link>
+          <Link className={liClasses} to='/website-builder'>Website Builder</Link>
+          {/*<Link className={liClasses} to='/hosting'>Create a Blog</Link>*/}
           <Link className={liClasses} to='/professional-email'>Professional Email</Link>
-          <Link className={liClasses} to='/hosting'>Website Design Services</Link>
+          {/*<Link className={liClasses} to='/hosting'>Website Design Services</Link>*/}
           <li><hr className="my-2"/></li>
-          <li className={liClasses}>Enterprise</li>
+          {/*<li className={liClasses}>Enterprise</li>*/}
         </>
       case 2:
         return <>
           <Link className={liClasses} to='/features'>Overview</Link>
           <li><hr className="my-2"/></li>
-          <li className={liClasses}>WordPress Themes</li>
+          {/*<li className={liClasses}>WordPress Themes</li>
           <li className={liClasses}>WordPress Plugins</li>
-          <li className={liClasses}>Google Apps</li>
+          <li className={liClasses}>Google Apps</li>*/}
         </>
       case 3:
         return <>
-          <li className={liClasses}>WordPress.com Support</li>
+          {/*<li className={liClasses}>WordPress.com Support</li>
           <li className={liClasses}>News</li>
-          <li className={liClasses}>Website Building Tips</li>
+          <li className={liClasses}>Website Building Tips</li>*/}
           <Link className={liClasses} to='/business-name-generator'>Bussines Name Generator</Link>
-          <li className={liClasses}>Logo Maker</li>
+          {/*<li className={liClasses}>Logo Maker</li>*/}
         </>
     }
   }

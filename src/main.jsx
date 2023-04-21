@@ -14,6 +14,7 @@ import Features from './routes/features';
 import Email from './routes/email';
 import Domains from './routes/domains';
 import NameGenerator from './routes/nameGenerator';
+import WebsiteBuilder from './routes/websiteBuilder';
 
 const router = createBrowserRouter([
   {
@@ -43,6 +44,10 @@ const router = createBrowserRouter([
       {
         path: "business-name-generator",
         element: <NameGenerator />
+      },
+      {
+        path: "website-builder",
+        element: <WebsiteBuilder />
       }
     ],
   },
