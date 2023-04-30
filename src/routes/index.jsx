@@ -11,16 +11,16 @@ import Plans from '../components/index/Plans';
 function Index() {
   return (
     <>
-      <Nav textColor='text-[#003C56]'/> 
-      <section>
-        <div className="pt-32 w-full max-w-6xl max-xl:px-5 mx-auto">
+      <section className="text-[#003c56]">
+        <Nav/>
+        <div className="pt-32 w-full max-w-6xl max-xl:px-5 mx-auto text-black">
             <h1 className="font-serif text-7xl"><span className="">Welcome to the world’s</span><br /><span>most popular website builder.</span></h1>
             <p className="max-w-4xl text-lg font-normal mt-6">42% of the web is built on WordPress. More bloggers, small businesses, and Fortune 500 companies use WordPress than all other options combined. Join the millions of people that call WordPress.com home.</p>
             <button className="mt-10 bg-[#0675c4] text-white flex justify-center items-center w-40 h-14 rounded-md">Get Started</button>
-            <ImageSlider/> 
+            <ImageSlider/>
         </div>
       </section>
-      <section className='bg-[#101517] my-[-15rem] flex justify-center'>
+      <section className='bg-[#101517] -my-60 flex justify-center'>
         <div className="pt-60 w-full max-w-[1400px] max-xl:px-5">
           <div className="pt-[180px] w-full max-w-6xl mx-auto text-white">
             <h2 className="font-serif text-7xl"><span className="">Stand out with stylish</span><br /><span>themes and patterns</span></h2>

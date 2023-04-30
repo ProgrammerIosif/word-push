@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import Dropdown from "./Dropdown";
 
-function Nav({textColor}) {
+function Nav() {
   const [dropdownIdx, setDropdownIdx] = useState(0);
   const [dropdownVisibility, setDropdownVisibility] = useState(false);
   const itemsWithDropdown = [
@@ -13,7 +13,7 @@ function Nav({textColor}) {
   ]
   return (
     <>
-    <div className={`h-14 flex justify-between px-6 text-lg font-semibold ${textColor}`}>
+    <div className='h-14 flex justify-between px-6 text-lg font-semibold'>
       <ul className="flex">
         <li>
           <Link to="/" className='flex mr-8 gap-1 py-[6px]'>
@@ -23,17 +23,17 @@ function Nav({textColor}) {
           </Link>
         </li>
         {itemsWithDropdown.map((item,idx) => (
-            <li className="after:content-['▾'] pr-5 cursor-pointer py-3" 
+            <li className="after:content-['▾'] pr-5 cursor-pointer py-3"
                 onMouseEnter={() => {setDropdownIdx(idx+1),setDropdownVisibility(true)}}
                 onMouseLeave={() => setDropdownVisibility(false)}>
-                  {item.name} 
+                  {item.name}
             </li>
           ))}
         <li className="py-3">Plans & Pricing</li>
       </ul>
       <div className="flex">
         <button>Log In</button>
-        <button className="ml-8 my-2 px-3 border rounded-md">Get Started</button> 
+        <button className="ml-8 my-2 px-3 border rounded-md">Get Started</button>
       </div>
     </div>
     <Dropdown render={dropdownVisibility} idx={dropdownIdx} y={dropdownIdx === 0 ? 0 : itemsWithDropdown[dropdownIdx-1].y}/>

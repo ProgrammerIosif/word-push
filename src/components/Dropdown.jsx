@@ -13,7 +13,7 @@ function Dropdown(props) {
           <Link className={liClasses} to='/hosting'>WordPress Hosting</Link>
           <Link className={liClasses} to='/domains'>Domain Names</Link>
           <Link className={liClasses} to='/website-builder'>Website Builder</Link>
-          {/*<Link className={liClasses} to='/hosting'>Create a Blog</Link>*/}
+          <Link className={liClasses} to='/create-blog'>Create a Blog</Link>
           <Link className={liClasses} to='/professional-email'>Professional Email</Link>
           {/*<Link className={liClasses} to='/hosting'>Website Design Services</Link>*/}
           <li><hr className="my-2"/></li>

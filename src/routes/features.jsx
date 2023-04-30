@@ -187,11 +187,11 @@ const features = [
     ]
   }
 ];
-   
+
 function Features() {
   return (
     <div className="bg-[#101517] text-white">
-      <Nav textColor='text-white'/> 
+      <Nav/>
       <div className="pt-32 w-full max-w-6xl max-xl:px-5 mx-auto mb-32">
         <h1 className="font-serif text-7xl">Everything.<br />Every. Single. Thing.</h1>
         <p className="max-w-4xl text-lg font-normal mt-6">Whatever you need. Whatever you’re trying to get done. <br/> There’s a feature for that on WordPress.com.</p>
@@ -200,14 +200,14 @@ function Features() {
           <div>
             <h2 className="text-3xl mt-20 mb-8 font-serif">{section.title}</h2>
             <div className="w-full grid grid-cols-3 gap-5">
-              {section.cards.map(card => 
+              {section.cards.map(card =>
                 <div className="bg-[#2c3338] text-white rounded-lg p-7">
                   <div className="h-9 w-9 bg-black p-1.5 rounded-full">
                     <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
                       <path d="M20.2 8v11c0 .7-.6 1.2-1.2 1.2H6v1.5h13c1.5 0 2.7-1.2 2.7-2.8V8h-1.5zM18 16.4V4.6c0-.9-.7-1.6-1.6-1.6H4.6C3.7 3 3 3.7 3 4.6v11.8c0 .9.7 1.6 1.6 1.6h11.8c.9 0 1.6-.7 1.6-1.6zM4.5 4.6c0-.1.1-.1.1-.1h11.8c.1 0 .1.1.1.1V12l-2.3-1.7c-.3-.2-.6-.2-.9 0l-2.9 2.1L8 11.3c-.2-.1-.5-.1-.7 0l-2.9 1.5V4.6zm0 11.8v-1.8l3.2-1.7 2.4 1.2c.2.1.5.1.8-.1l2.8-2 2.8 2v2.5c0 .1-.1.1-.1.1H4.6c0-.1-.1-.2-.1-.2z" fill='white'></path>
                     </svg>
                   </div>
-                  <h3 className="font-bold my-4 text-lg">{card.title}</h3> 
+                  <h3 className="font-bold my-4 text-lg">{card.title}</h3>
                   <p className="text-[#c3c4c7]">{card.text}</p>
                 </div>)}
             </div>

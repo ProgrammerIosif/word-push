@@ -103,7 +103,7 @@ function Hosting() {
   return (
     <>
       <section className="bg-gradient-to-b from-[#0b4f7b] to-[#101517] text-white">
-        <Nav textColor='text-white'/>  
+        <Nav/>
         <div className="pt-24 w-full max-w-4xl max-xl:px-5 mx-auto pb-20">
           <h1>HOSTING</h1>
           <h2 className="font-serif text-6xl mt-5">Basically, the best<br/>managed WordPress<br/>hosting on the planet</h2>
@@ -113,12 +113,12 @@ function Hosting() {
         </div>
       </section>
       <section className='bg-[#101517] text-white'>
-        {features.map(section => 
+        {features.map(section =>
           <div className='w-full max-w-4xl max-xl:px-5 mx-auto py-10'>
             <h3 className='uppercase text-[#1689db] font-semibold'>{section.title}</h3>
             <p className='font-serif text-4xl mt-3'>{section.subtitle}</p>
             <div className='grid grid-cols-1 lg:grid-cols-2 gap-12 mt-10'>
-              {section.list.map(item => 
+              {section.list.map(item =>
                 <div>
                   <div className='flex gap-4'>
                     <div className='h-5 w-5 text-[#1689db]'>
@@ -164,12 +164,11 @@ function Hosting() {
                   text: 'It’s been a great privilege and a life-changing experience. I’m grateful to WordPress.com for providing an affordable and user-friendly platform for individuals to launch projects and be heard in this way.',
                   name: 'Ann Morgan'
                 }
-              ].map(item => 
+              ].map(item =>
                 <div className='h-72 p-8 mr-4 rounded-lg bg-[#2c3338] flex flex-col justify-between'>
                   <p className='before:content-["“"] after:content-["“"] text-2xl font-serif'>{item.text}</p>
                   <p>{item.name}</p>
                 </div>)}
-              
             </div>
           </div>
         </div>

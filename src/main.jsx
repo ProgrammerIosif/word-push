@@ -15,6 +15,7 @@ import Email from './routes/email';
 import Domains from './routes/domains';
 import NameGenerator from './routes/nameGenerator';
 import WebsiteBuilder from './routes/websiteBuilder';
+import CreateBlog from './routes/createBlog';
 
 const router = createBrowserRouter([
   {
@@ -48,6 +49,10 @@ const router = createBrowserRouter([
       {
         path: "website-builder",
         element: <WebsiteBuilder />
+      },
+      {
+        path: "create-blog",
+        element: <CreateBlog />
       }
     ],
   },
