@@ -16,9 +16,9 @@ function ProductsMenu() {
   };
 
   return (
-    <div className="my-24 flex justify-between">
+    <div className="my-24 flex justify-between max-sm:flex-col max-sm:gap-10">
       <div className="w-80 text-[#707374] text-3xl font-light">
-        <ul className="flex flex-col justify-start gap-5">
+        <ul className="flex flex-col gap-5">
           {items.map((item, index) => (
             <li
               key={index}
@@ -35,7 +35,7 @@ function ProductsMenu() {
           ))}
         </ul>
       </div>
-      <div className="w-2/3 relative aspect-[8/5]">
+      <div className="sm:w-2/3 relative aspect-[8/5]">
         {items.map((image, index) => (
           <img
             width='800'

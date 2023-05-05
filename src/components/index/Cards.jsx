@@ -7,10 +7,11 @@ const cards = [
 
 function Cards() {
   return (
-    <div className="grid grid-rows-1 grid-cols-4 gap-4">
-      {cards.map((card,idx) =>
-        <div className="bg-[#fdfdfd] rounded-xl p-6">
-          <div className="h-16 w-16 mb-20 flex items-center justify-center rounded-full bg-black">
+    <div className="grid
+                    sm:grid-rows-1 sm:grid-cols-4 gap-4">
+      {cards.map(card =>
+        <div className="bg-[#fdfdfd] rounded-xl p-6 max-sm:flex max-sm:flex-col max-sm:items-center">
+          <div className="h-16 w-16 mb-5 sm:mb-20 flex items-center justify-center rounded-full bg-black">
             <img width='28' height='28' className="h-7 w-7" src={card.img} alt='' />
           </div>
           <h3 className="text-4xl font-thin font-serif my-3">{card.title}</h3>

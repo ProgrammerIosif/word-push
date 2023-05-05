@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .title{
+    @apply font-serif text-5xl sm:text-6xl md:text-7xl;
+  }
+  .small-title{
+    @apply font-serif text-4xl md:text-5xl lg:text-6xl;
+  }
+}
+
 #banner {
   background: url(https://s1.wp.com/wp-content/themes/h4/landing/marketing/pages/hp-2022-oct/media/desktop/brand-logos.svg)
     0% 80%;
@@ -12,11 +21,13 @@
   margin-top: 6rem;
   display: flex;
 }
+
 @keyframes moves {
   to {
     background-position: -2000vw 80%;
   }
 }
+
 .lp-icon-shield-anim{
   animation: etRMJ7ETBXn4_ts__ts 3s linear .15s 1 normal forwards;
 }

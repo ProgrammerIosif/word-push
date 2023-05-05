@@ -32,7 +32,7 @@ function ImageSlider() {
   }, [images]);
 
   return (
-      <div className="relative w-[93%] xl:w-[100%] aspect-[1.535] border-[12px] border-[#f2f2f2] rounded-3xl mt-16">
+      <div className="relative w-[93%] xl:w-[100%] aspect-[1.535] border-4 sm:border-[12px] border-[#f2f2f2] rounded-xl sm:rounded-3xl mt-16">
         {images.map((image, index) => (
           <img
             width='1200'
@@ -45,14 +45,16 @@ function ImageSlider() {
             alt=''
           />
         ))}
-        <div className='absolute -right-20 top-12 w-40 h-24 bg-[#f2f2f2]/40 backdrop-blur-xl rounded-xl shadow-md'>
-          {samples.map((sample, idx) => 
+        <div className='absolute -right-10 md:-right-20 top-12 w-24 md:w-40 h-16 md:h-24 bg-[#f2f2f2]/40 backdrop-blur-xl rounded-xl shadow-md'>
+          {samples.map((sample, idx) =>
 
-            <div key={idx} 
-                className={`absolute h-full w-28 transition-opacity flex items-center justify-center ${sample.font} text-5xl ${sample.textColor} 
-                ${idx === currentIndex ? 'opacity-100' : 'opacity-0'}`}>Aa
-              <div className={`w-5 h-5 rounded-full ${sample.color1} absolute left-28 top-6`}></div>
-              <div className={`w-5 h-5 rounded-full ${sample.color2} absolute left-28 bottom-6`}></div>   
+            <div key={idx} className={`absolute h-full w-14 md:w-28 transition-opacity flex items-center justify-center ${sample.font} text-3xl md:text-5xl ${sample.textColor}
+                ${idx === currentIndex ? 'opacity-100' : 'opacity-0'}`}>
+              Aa
+              <div className={`w-4 h-4 rounded-full ${sample.color1} absolute left-16 top-3
+                               md:w-5 md:h-5 md:left-28 md:top-6`}></div>
+              <div className={`w-4 h-4 rounded-full ${sample.color2} absolute left-16 bottom-3
+                               md:w-5 md:h-5 md:left-28 md:bottom-6`}></div>
             </div>
           )}
         </div>
