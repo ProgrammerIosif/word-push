@@ -165,7 +165,7 @@ function Plans() {
       </div>
 
       {/* table */}
-      <div className='mt-20 grid grid-cols-1 md:grid-cols-3 md:max-xl:w-[800px] gap-y-16 xl:grid-cols-6'>
+      <div className='mt-20 grid grid-cols-1 max-md:max-w-sm md:grid-cols-3 md:max-xl:w-[800px] gap-y-16 xl:grid-cols-6'>
         {plans.map((plan,idx) =>
           <div className={`flex flex-col border md:border-r-0 border-gray-200 relative p-5 basis-full ${idx === 2 || idx === 3 ? '-mt-8' : ''}`}>
             <span className={`${idx === 2 || idx === 3 ? '-mt-2 mb-6' : ''}  bg-black text-white font-medium text-xs w-max rounded-sm px-2`}>{idx === 2 ? 'Popular' : idx === 3 ? 'Best for devs' : ''}</span>

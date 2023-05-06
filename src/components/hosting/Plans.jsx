@@ -29,7 +29,7 @@ const plans = [
       "Tools for SEO"
     ],
     storage: 200,
-    img: <img src="https://s1.wp.com/wp-content/themes/h4/landing/marketing/pages/_common/components/plan-business/media/cloud-logo.svg" alt='' width='31' height='18'/> 
+    img: <img src="https://s1.wp.com/wp-content/themes/h4/landing/marketing/pages/_common/components/plan-business/media/cloud-logo.svg" alt='' width='31' height='18'/>
   },
   {
     name: "Commerce",
@@ -54,7 +54,7 @@ const plans = [
     ],
     tools:[],
     storage: 200,
-    img: <img src="https://s1.wp.com/wp-content/themes/h4/landing/marketing/pages/_common/components/plan-ecommerce/media/woo-logo.svg" alt='' width='30' height='19'/> 
+    img: <img src="https://s1.wp.com/wp-content/themes/h4/landing/marketing/pages/_common/components/plan-ecommerce/media/woo-logo.svg" alt='' width='30' height='19'/>
   }
 ];
 
@@ -95,9 +95,9 @@ function Plans() {
       </div>
 
       {/* table */}
-      <div className='mt-20 grid grid-cols-3 max-xl:w-[800px] gap-y-16 bg-white text-black rounded-lg'>
-        {plans.map((plan,idx) => 
-          <div className='flex flex-col p-5 basis-full'>
+      <div className='mt-20 grid bg-transparent max-md:max-w-sm md:grid-cols-3 max-xl:w-[800px] gap-y-16 bg-white text-black rounded-lg'>
+        {plans.map((plan,idx) =>
+          <div className='flex flex-col p-5 basis-full bg-white'>
             <div className='h-10 flex items-end'>{plan.img}</div>
             <h3 className='text-4xl font-serif'>{plan.name}</h3>
             <p className='text-xs mt-1 h-16'>{plan.description}</p>
@@ -114,7 +114,7 @@ function Plans() {
             </ul>
             <div className='grow'></div>
             <p className='text-xs font-normal py-5'>STORAGE <br /><br/><span className='bg-gray-100 py-2 px-3 text-xs rounded-lg'>{plan.storage} GB</span></p>
-          </div>)} 
+          </div>)}
         <div className='flex flex-col p-5 basis-full bg-[#101517] text-white rounded-r-lg'>
           <div className='h-10 flex items-end pb-1'><img className=' brightness-0 invert' src="https://s1.wp.com/wp-content/themes/h4/landing/marketing/pages/_common/components/plan-vip/media/vip-logo.svg" width='38' height='17' alt=''/></div>
           <h4 className='text-4xl font-serif'>Enterprise</h4>
@@ -134,7 +134,7 @@ function Plans() {
           </div>
         </div>
       </div>
-      <div className='mt-10 py-2 rounded border border-black text-black text-sm font-semibold px-10'>Compare Plans {'>'}</div>
+      <div className='mt-10 py-2 rounded border bg-white text-black text-sm font-semibold px-10'>Compare Plans {'>'}</div>
     </div>
   );
 }
