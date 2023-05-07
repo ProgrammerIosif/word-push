@@ -27,7 +27,7 @@ function SearchwithImage() {
   }
 
   return (
-    <div className='relative ml-24'>
+    <div className='relative md:ml-24 w-[295px] self-center'>
       <div className='w-[295px] h-[454px]'>
         {images.map((image, idx) => (
           <img
@@ -42,7 +42,7 @@ function SearchwithImage() {
           />
         ))}
       </div>
-      <div className="absolute w-[340px] bottom-80 right-12">
+      <div className="absolute w-[295px] bottom-80 right-4 md:right-12">
         <div className='relative bg-white border w-full rounded-lg shadow-lg p-4 flex gap-4'>
           <img width='24' height='24' src="https://cdn-icons-png.flaticon.com/512/594/594903.png" alt='' className="h-6"/>
           <Typewriter strings={strings} passIndex={updateIndex}/>

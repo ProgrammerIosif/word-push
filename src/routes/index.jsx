@@ -21,14 +21,14 @@ export default function Index() {
         </div>
       </section>
     <section className='bg-[#101517] -my-20 sm:-my-60 flex justify-center'>
-        <div className="pt-60 w-full max-w-[1400px] max-xl:px-5">
-          <div className="mb-32 sm:mb-60 sm:pt-[180px] w-full max-w-6xl mx-auto text-white">
-            <h2 className="title"><span className="">Stand out with stylish</span><br /><span>themes and patterns</span></h2>
+        <div className="pt-36 md:pt-60 w-full max-w-[1400px] max-xl:px-5">
+          <div className="mb-20 sm:mb-60 sm:pt-[180px] w-full max-w-6xl mx-auto text-white">
+            <h2 className="title max-w-2xl">Stand out with stylish themes and patterns</h2>
             <p className="max-w-4xl text-lg font-normal mt-6">Instantly transform the look and feel of your site with beautifully crafted themes and one-click layouts.</p>
             <button className="mt-10 bg-white text-black font-medium flex justify-center items-center w-48 h-12 rounded-sm">Find your theme</button>
           </div>
           <ImageGrid/>
-          <div className="mt-48 w-full max-w-6xl my-10  mx-auto text-white">
+          <div className="my-20 sm:my-60 w-full max-w-6xl mx-auto text-white">
             <h2 className="title"><span className="">Build anything with</span><br /><span>WordPress.com</span></h2>
             <p className="max-w-4xl text-lg font-normal mt-6">Whatever you're building, there's a fast, intuitive way to get started.</p>
             <ProductsMenu/>
@@ -36,7 +36,7 @@ export default function Index() {
         </div>
       </section>
       <section className='mt-20 bg-white -mb-60'>
-        <div className="pt-32 w-full max-w-6xl max-xl:px-5 mx-auto">
+        <div className="pt-20 md:pt-32 w-full max-w-6xl max-xl:px-5 mx-auto">
             <h2 className="title">Infinitely efortless editing</h2>
             <p className="max-w-xl text-lg font-normal mt-6">Magically drag, drop and draw on a huge collection of design patterns, features, and layouts with the intuitive, built-in block editor.</p>
             <button className="mt-10 bg-black text-white flex justify-center items-center w-40 h-14 rounded-md font-medium">Start creating</button>
@@ -44,7 +44,7 @@ export default function Index() {
         </div>
       </section>
       <section className='bg-[#bbe0fa] pt-40 -mb-10 sm:-mb-14'>
-        <div className="pt-32 w-full max-w-6xl max-xl:px-5 mx-auto">
+        <div className="pt-20 md:pt-32 w-full max-w-6xl max-xl:px-5 mx-auto">
             <h2 className="title">Your home on the web</h2>
             <p className="max-w-xl text-lg font-normal mt-6">Nothing sets your site apart faster than a unique address on the web. From <b>.com</b> to <b>.blog</b>, there’s a one-of-a-kind domain with your name on it. And your first year is free with any annual paid plan.</p>
             <button className="my-12 bg-black text-white flex justify-center items-center w-48 h-12 rounded-md font-medium">Find your domain</button>
@@ -60,7 +60,7 @@ export default function Index() {
         </div>
       </section>
       <section className='bg-white mb-28'>
-        <div className="pt-36 sm:pt-60 w-full max-w-[1500px] max-xl:px-5 mx-auto flex flex-col items-center">
+        <div className="pt-16 md:pt-36 sm:pt-60 w-full max-w-[1500px] max-xl:px-5 mx-auto flex flex-col items-center">
             <h2 className="font-serif text-5xl max-w-5xl mb-5 text-center">Choose your flavor of WordPush</h2>
             <Plans/>
         </div>

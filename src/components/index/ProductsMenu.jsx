@@ -16,7 +16,7 @@ function ProductsMenu() {
   };
 
   return (
-    <div className="my-24 flex justify-between max-sm:flex-col max-sm:gap-10">
+    <div className="my-10 md:my-24 flex justify-between max-sm:flex-col max-sm:gap-10">
       <div className="w-80 text-[#707374] text-3xl font-light">
         <ul className="flex flex-col gap-5">
           {items.map((item, index) => (
