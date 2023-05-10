@@ -20,7 +20,7 @@ const Domains = () => {
             <SearchwithImage/>
           </div>
           <p className='stroke-red-50 border border-gray-300 text-[#50575e] font-semibold text-center'>Deals on domains</p>
-          <div className='grid min-[400px]:grid-cols-2 md:grid-cols-4 gap-5 pt-5'>
+          <div className='grid xs:grid-cols-2 md:grid-cols-4 gap-5 pt-5'>
             {[{img: 'https://s1.wp.com/wp-content/themes/h4/assets/tld-logos/online.svg',
                text: '€6.40',
                cut: '€32.00/year'},

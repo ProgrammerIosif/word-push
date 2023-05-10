@@ -14,6 +14,9 @@ module.exports = {
       boxShadow: {
         'dropdown': '0 20px 100px -5px rgba(0,0,0,0.27)'
       },
+      screens: {
+        'xs': '520px'
+      }
     }
   },
 
