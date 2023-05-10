@@ -10,19 +10,19 @@ export default function WebsiteBuilder() {
           <div className='bg-[url("https://s-origin.wordpress.com/wp-content/themes/h4/assets/section-backgrounds/space.jpg")] opacity-75 bg-center bg-cover absolute h-full w-full'></div>
         </div>
         <Nav />
-        <div className="py-24 w-full max-w-3xl max-xl:px-5 mx-auto grid place-items-center">
+        <div className="py-6 md:py-24 w-full max-w-3xl max-xl:px-5 mx-auto grid place-items-center">
           <img src="https://s1.wp.com/wp-content/themes/h4/assets/logo/wordpress-white.svg" alt="" width='70' height='70'/>
-          <h1 className='text-6xl font-serif text-center mt-5'>Welcome to the world’s <br/>most popular website builder.</h1>
-          <h2 className='text-6xl font-serif bg-[#0675c4] py-1 rounded-sm mb-8'>Your new website is waiting.</h2>
-          <p className='text-center max-w-2xl text-lg'>More bloggers, small businesses, and Fortune 500 companies use WordPress.com than all other website builders combined. There’s a good reason, too. It’s the most accessible tool to create a website with drag-and-drop simplicity that’s mobile-friendly. And one that search engines will love.</p>
+          <h1 className='small-title text-center mt-5'>Welcome to the world’s <br/>most popular website builder.</h1>
+          <h2 className='small-title text-center bg-[#0675c4] py-1 rounded-sm mb-8'>Your new website is waiting.</h2>
+          <p className='text-center max-w-lg md:max-w-2xl md:text-lg'>More bloggers, small businesses, and Fortune 500 companies use WordPress.com than all other website builders combined. There’s a good reason, too. It’s the most accessible tool to create a website with drag-and-drop simplicity that’s mobile-friendly. And one that search engines will love.</p>
           <button className='bg-[#c9356e] py-3 px-4 rounded mt-6 mb-10'>Start your website</button>
         </div>
       </section>
       <section className='text-[#055d9c] bg-white'>
-        <div className="py-24 w-full max-w-6xl max-xl:px-5 mx-auto">
-          <h2 className='font-serif text-6xl'>Build a website that grows with you in a few simple steps.</h2>
-          <h3 className='text-gray-600 text-3xl font-serif max-w-lg my-6'>So you can focus on sharing your work, growing your audience, and even making money.</h3>
-          <div className='grid grid-cols-2 gap-20'>
+        <div className="py-16 md:py-24 w-full max-w-lg md:max-w-6xl max-xl:px-5 mx-auto">
+          <h2 className='small-title'>Build a website that grows with you in a few simple steps.</h2>
+          <h3 className='text-gray-600 text-xl md:text-3xl font-serif max-w-lg my-6'>So you can focus on sharing your work, growing your audience, and even making money.</h3>
+          <div className='grid md:grid-cols-2 gap-10 md:gap-20'>
             {[{img:'bg-[url("https://assets.a8c.now.sh/static/gridicons-white/domains.svg")]',
                title: 'Start building.',
                subtitle: 'The opportunities are endless',
@@ -40,24 +40,24 @@ export default function WebsiteBuilder() {
                subtitle: 'Turn website visitors into paying customers.',
                text: 'Now, it’s time to start earning. And the WordPress.com Payments Block makes it easy and convenient. Create and embed credit and debit card payment buttons right into your website. Then, securely accept payments on your website for just about anything – physical items, digital downloads, memberships, services, donations, even tips.'}].map(item =>
                   <div>
-                    <div className='w-9 h-9 p-3 bg-[#055d9c] rounded-full'>
+                    <div className='w-9 h-9 bg-[#055d9c] rounded-full'>
                       <div className={`w-9 h-9 ${item.img} bg-contain bg-center`}></div>
                     </div>
-                    <h4 className='text-3xl font-medium my-4'>{item.title}</h4>
+                    <h4 className='text-2xl md:text-3xl font-medium my-4'>{item.title}</h4>
                     <h5 className='font-semibold my-2'>{item.subtitle}</h5>
                     <p className='text-gray-600'>{item.text}</p>
                   </div>)}
           </div>
           <div className='grid place-items-center'>
-            <button className='mt-20 bg-[#0675c4] text-white py-2.5 px-4 rounded'>Start your website</button>
+            <button className='mt-8 md:mt-20 bg-[#0675c4] text-white py-2.5 px-4 rounded'>Start your website</button>
           </div>
         </div>
       </section>
       <section className="bg-[#044b7a] text-white">
-        <div className="py-32 w-full max-w-6xl max-xl:px-5 mx-auto relative">
+        <div className="py-12 md:py-32 w-full max-w-lg md:max-w-6xl max-xl:px-5 mx-auto relative">
           <div className="relative">
             <img src="https://s1.wp.com/wp-content/themes/h4/assets/webinars/hosts@3x.png" alt="" width='234' height='72'/>
-            <h2 className="font-serif text-6xl my-8">Expert help when you need it.</h2>
+            <h2 className="small-title my-8">Expert help when you need it.</h2>
             <h3 className='font-semibold mb-4'>Our Happiness Engineers are here to support you anytime.</h3>
             <p className='max-w-xl text-[#a9d2ed]'>Be confident building your website with support from WordPress experts. You can chat with them live if you have a question or learn at your own pace with on-demand webinars. With WordPress.com, you’ll always have all the tools and support you need to build a website that grows with you.</p>
           </div>
@@ -65,9 +65,9 @@ export default function WebsiteBuilder() {
         </div>
       </section>
       <section className='bg-[#101517] text-white'>
-        <div className="py-24 w-full max-w-6xl max-xl:px-5 mx-auto relative">
-          <h2 className="font-serif text-5xl mb-16">Pick from hundreds of themes. For any kind of project.</h2>
-          <div className='grid grid-cols-2 gap-20'>
+        <div className="py-24 w-full max-w-lg md:max-w-6xl max-xl:px-5 mx-auto relative">
+          <h2 className="small-title mb-16">Pick from hundreds of themes. For any kind of project.</h2>
+          <div className='grid md:grid-cols-2 gap-20'>
             <div className="border boder-white rounded-lg pt-5">
               <div className="border-t border-white h-full flex justify-center -mb-20 overflow-hidden rounded-b-lg">
                 <img src="https://wpcom.files.wordpress.com/2018/02/dyad-2-wordpress-theme1.png" alt="" className='h-[380px] w-auto'/>
@@ -81,9 +81,9 @@ export default function WebsiteBuilder() {
         </div>
       </section>
       <section className='bg-[#008763] text-white'>
-        <div className="py-24 w-full max-w-6xl max-xl:px-5 mx-auto relative">
-          <h2 className="font-serif text-5xl mb-16">Find everything you need for a powerful and profitable site.</h2>
-          <div className='grid grid-cols-2 gap-20'>
+        <div className="py-24 w-full max-w-lg md:max-w-6xl max-xl:px-5 mx-auto relative">
+          <h2 className="small-title mb-16">Find everything you need for a powerful and profitable site.</h2>
+          <div className='grid md:grid-cols-2 gap-20'>
             <div className="border boder-white rounded-lg pt-5">
               <div className="border-t border-white h-full flex justify-center  overflow-hidden rounded-b-lg">
                 <img src="https://wpcom.files.wordpress.com/2020/06/editor-demo402x.png" alt="" className='h-[300px] w-auto'/>
@@ -97,9 +97,9 @@ export default function WebsiteBuilder() {
         </div>
       </section>
       <section className="bg-[#055d9c] text-white">
-        <div className="py-32 w-full max-w-6xl max-xl:px-5 mx-auto relative">
+        <div className="py-12 md:py-32 w-full max-w-lg md:max-w-6xl max-xl:px-5 mx-auto relative">
           <div className="relative">
-            <h2 className="font-serif text-6xl mb-10">Effortless Search Engine Optimization.</h2>
+            <h2 className="small-title mb-10">Effortless Search Engine Optimization.</h2>
             <h3 className='text-3xl font-serif max-w-lg'>Out-of-the-box SEO tools and SSL certificates come standard.</h3>
             <p className='max-w-xl my-4'>WordPress.com comes stock with everything you need for an SEO-friendly website. Included content delivery networks (CDN) ensure your website’s pages load fast. The included SSL certificates make your site’s security a breeze. Simple on-page SEO elements help your site rank higher and drive more traffic. And Jetpack-powered XML sitemaps keep your pages organized and auto-updated for search engines.</p>
             <button className='bg-[#c9356e] py-2.5 px-4 text-sm rounded'>Start your website</button>
@@ -108,9 +108,9 @@ export default function WebsiteBuilder() {
         </div>
       </section>
       <section>
-        <div className="py-32 w-full max-w-6xl max-xl:px-5 mx-auto text-gray-500">
-          <h2 className="font-serif text-6xl mb-16 text-center text-[#055d9c]">People love WordPress.com.</h2>
-          <div className='grid grid-cols-3 gap-20'>
+        <div className="py-20 md:py-32 w-full max-w-lg md:max-w-6xl max-xl:px-5 mx-auto text-gray-500">
+          <h2 className="small-title mb-16 text-center text-[#055d9c]">People love WordPress.com.</h2>
+          <div className='grid md:grid-cols-3 gap-20'>
             {[{text: 'I looked into what other bloggers whom I admired were using, and the Cadillac of platforms is WordPress.com, hands down. The themes are breathtaking—even the free ones!—and all of the supporting infrastructure and information is top shelf.',
                name: 'Alexis Kanda-Olmstead',
                site: 'alexiskanda-olmstead.com',
@@ -137,15 +137,15 @@ export default function WebsiteBuilder() {
         </div>
       </section>
       <section className='bg-[#055d9c] text-white'>
-        <div className="py-32 w-full max-w-6xl max-xl:px-5 mx-auto flex flex-col items-center">
-          <h2 className="font-serif text-5xl mb-8 text-center">Your new website is waiting.</h2>
-          <p>No code, no manuals, no limits. Unlock the power of the most flexible website builder.</p>
+        <div className="py-20 md:py-32 w-full max-w-lg md:max-w-6xl max-xl:px-5 mx-auto flex flex-col items-center">
+          <h2 className="small-title mb-8 text-center">Your new website is waiting.</h2>
+          <p className='text-center'>No code, no manuals, no limits. Unlock the power of the most flexible website builder.</p>
           <button className='bg-[#c9356e] rounded py-2.5 px-4 mt-8'>Start your website</button>
         </div>
       </section>
       <section>
-        <div className="py-32 w-full max-w-6xl max-xl:px-5 mx-auto flex flex-col items-center">
-          <h2 className="font-serif text-6xl mb-8 text-center text-[#0675c4]">You asked, we answered.</h2>
+        <div className="py-16 md:py-32 w-full max-w-lg md:max-w-6xl max-xl:px-5 mx-auto flex flex-col items-center">
+          <h2 className="small-title mb-8 text-center text-[#0675c4]">You asked, we answered.</h2>
           <Questions list={questions}/>
           <button className='bg-[#0675c4] text-white rounded py-2.5 px-4 mt-8'>Start your website</button>
         </div>
@@ -154,9 +154,9 @@ export default function WebsiteBuilder() {
         <div className='absolute -z-10 w-full h-full bg-[#055d9c]'>
           <div className='bg-[url("https://s-origin.wordpress.com/wp-content/themes/h4/assets/section-backgrounds/space.jpg")] opacity-75 bg-center bg-cover absolute h-full w-full'></div>
         </div>
-        <div className="py-24 w-full max-w-6xl max-xl:px-5 mx-auto grid place-items-center">
+        <div className="py-12 md:py-24 w-full max-w-lg md:max-w-6xl max-xl:px-5 mx-auto grid place-items-center">
           <img src="https://s1.wp.com/wp-content/themes/h4/assets/logo/wordpress-white.svg" alt="" width='70' height='70'/>
-          <h1 className='text-6xl font-serif text-center my-8'>You’re just a few clicks away from the website you’ve always wanted.</h1>
+          <h1 className='small-title text-center my-8'>You’re just a few clicks away from the website you’ve always wanted.</h1>
           <p className='text-center max-w-2xl text-lg'>No code, no manuals, no limits. Unlock the power of the world’s most flexible website builder. WordPress.com gives you everything you need to create your website today. Managed WordPress hosting, with more speed, security, bandwidth and storage. Your own domain, a world-class support team, real-time backups and updates, and so much more.</p>
           <button className='bg-[#c9356e] py-3 px-4 rounded mt-6 mb-10'>Start your website</button>
         </div>
