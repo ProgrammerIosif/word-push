@@ -10,7 +10,7 @@ const Domains = () => {
         <div className="py-12 md:py-24 w-full max-w-6xl max-xl:px-5 mx-auto">
           <div className='flex max-md:flex-col justify-between mb-10'>
             <div className="flex flex-col justify-center">
-              <h1 className="text-5xl lg:text-6xl font-serif text-[#055d9c]">Great ideas start with a good domain name</h1>
+              <h1 className="small-title text-[#055d9c]">Great ideas start with a good domain name</h1>
               <p className="max-w-4xl text-lg font-normal mt-6 text-[#c9356e]">Choose from 350+ endings with WordPress.com domain name search</p>
               <div className='flex gap-2'>
                 <input className='w-full border h-12 my-5 rounded pl-3 border-[#c9356e]' type="text" name="domain" placeholder='Find your domain'/>
@@ -85,7 +85,7 @@ const Domains = () => {
       </section>
       <section className='text-[#2c3338]'>
         <div className="pb-28 w-full max-w-lg md:max-w-6xl max-xl:px-5 mx-auto">
-          <h2 className="title py-10 md:py-20">Supercharge your domain.</h2>
+          <h2 className="small-title py-10 md:py-20">Supercharge your domain.</h2>
           <div className="grid gap-24 md:grid-cols-2">
             <div>
               <img className="rounded-xl" src="https://wpcom.files.wordpress.com/2021/12/freedomain.png" alt="" />
@@ -106,7 +106,7 @@ const Domains = () => {
       </section>
       <section className='bg-[#e9f0f5]'>
         <div className="py-12 md:py-24 w-full max-w-lg md:max-w-6xl max-xl:px-5 mx-auto">
-          <h2 className="title font-light text-[#2c3338]">Get more with your domain.</h2>
+          <h2 className="small-title font-light text-[#2c3338]">Get more with your domain.</h2>
           <p className='bg-[#044b7a] w-max text-white text-sm py-1 px-4 mt-8 rounded'>Included for free with your domain</p>
           <div className="grid grid-cols-2 lg:grid-cols-3 py-16 gap-8 md:gap-24">
             {[{img: 'https://s1.wp.com/wp-content/themes/h4/assets/domains/icon-privacy-protection.svg',
@@ -138,7 +138,7 @@ const Domains = () => {
       </section>
       <section>
         <div className="py-12 md:py-32 w-full max-w-lg md:max-w-6xl max-xl:px-5 mx-auto">
-          <h2 className="title text-gray-800">You asked, we answered.</h2>
+          <h2 className="small-title text-gray-800">You asked, we answered.</h2>
           <p className="font-normal mt-6 text-gray-500 text-lg">Learn more about Professional Email and the 3-month free trial.</p>
           <div className="grid md:grid-cols-2 gap-x-24 gap-y-8 md:gap-y-16 text-gray-500 mt-10 md:mt-20">
             {[{title: 'What is a domain name?',
@@ -160,10 +160,10 @@ const Domains = () => {
         </div>
       </section>
       <section className="bg-[#e4f2ed] text-[#005c44]">
-        <div className="py-12 md:py-32 w-full max-w-lg md:max-w-6xl max-xl:px-5 mx-auto md:flex gap-20">
+        <div className="py-12 md:py-32 w-full max-w-lg md:max-w-6xl max-xl:px-5 mx-auto lg:flex gap-20">
           <div className="flex flex-col justify-center gap-6">
             <p>BEST IN CLASS</p>
-            <h2 className="title">24/7 Support</h2>
+            <h2 className="small-title">24/7 Support</h2>
             <p className="text-lg -mb-3">Get hands-on support from our experts through email or live chat.</p>
             <p className="text-lg">Whether you’re migrating from another provider or trying to create multiple email accounts we can always help. We’re excited to help you build and own your piece of the web.</p>
             <p className="font-medium underline text-lg">Visit our support center {'>'}</p>
@@ -173,7 +173,7 @@ const Domains = () => {
       </section>
       <section className="bg-[#facfd2] text-[#4d2054]">
         <div className="py-12 md:py-32 w-full max-w-lg md:max-w-6xl max-xl:px-5 mx-auto">
-          <h2 className="title">Create your professional online presence.</h2>
+          <h2 className="small-title">Create your professional online presence.</h2>
           <div className="grid md:grid-cols-2 gap-12 md:gap-32 text-lg mt-16">
             <div>
               <img className="rounded-xl" src="https://s1.wp.com/wp-content/themes/h4/assets/titan-promo/plans@2x.jpg" alt=""/>

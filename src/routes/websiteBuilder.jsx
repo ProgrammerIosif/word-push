@@ -12,7 +12,7 @@ export default function WebsiteBuilder() {
         <Nav />
         <div className="py-6 md:py-24 w-full max-w-3xl max-xl:px-5 mx-auto grid place-items-center">
           <img src="https://s1.wp.com/wp-content/themes/h4/assets/logo/wordpress-white.svg" alt="" width='70' height='70'/>
-          <h1 className='small-title text-center mt-5'>Welcome to the world’s <br/>most popular website builder.</h1>
+          <h1 className='small-title text-center mt-5 max-w-xl'>Welcome to the world’s most popular website builder.</h1>
           <h2 className='small-title text-center bg-[#0675c4] py-1 rounded-sm mb-8'>Your new website is waiting.</h2>
           <p className='text-center max-w-lg md:max-w-2xl md:text-lg'>More bloggers, small businesses, and Fortune 500 companies use WordPress.com than all other website builders combined. There’s a good reason, too. It’s the most accessible tool to create a website with drag-and-drop simplicity that’s mobile-friendly. And one that search engines will love.</p>
           <button className='bg-[#c9356e] py-3 px-4 rounded mt-6 mb-10'>Start your website</button>

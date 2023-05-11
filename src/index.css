@@ -7,7 +7,7 @@
     @apply font-serif text-5xl sm:text-6xl md:text-7xl;
   }
   .small-title{
-    @apply font-serif text-4xl md:text-5xl lg:text-6xl;
+    @apply font-serif text-5xl md:text-6xl;
   }
 }
 
