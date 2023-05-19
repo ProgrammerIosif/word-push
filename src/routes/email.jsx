@@ -7,7 +7,7 @@ export default function Email() {
     <>
       <Nav />
       <section>
-        <div className="py-5 md:py-24 w-full max-w-lg md:max-w-6xl max-xl:px-5 mx-auto md:flex justify-between">
+        <div className="py-5 md:py-24 section md:flex justify-between">
           <div className="flex flex-col justify-center">
             <h1 className="small-title text-[#055d9c]">Stand out with<br />Professional Email.</h1>
             <p className="max-w-4xl md:text-lg font-normal mt-6">Build and grow your online presence with a custom domain and <br />personalized email address from WordPress.com.</p>
@@ -23,7 +23,7 @@ export default function Email() {
         </div>
       </section>
       <section className="bg-[#e9f0f5]">
-        <div className="py-20 md:py-40 max-w-lg md:max-w-6xl max-xl:px-5 mx-auto flex flex-col items-center">
+        <div className="py-20 md:py-40 section flex flex-col items-center">
           <h2 className="small-title text-[#055d9c]">Your email. Your identity.</h2>
           <p className="font-normal my-6 text-gray-500 md:mb-20">Build your brand with every email you send. Starting from $3.50/month/mailbox.*</p>
           <div className="grid md:grid-cols-3 gap-6 md:gap-20 text-gray-500 mb-14">
@@ -47,7 +47,7 @@ export default function Email() {
         </div>
       </section>
       <section className="bg-[#008763] text-white">
-        <div className="py-24 w-full max-w-lg md:max-w-6xl max-xl:px-5 mx-auto flex flex-col items-center">
+        <div className="py-24 section flex flex-col items-center">
           <div className="grid md:grid-cols-2 gap-10 md:gap-24 text-lg md:mb-14">
             <div className="flex flex-col justify-center">
               <h2 className="small-title mb-5">Simple and powerful.</h2>
@@ -69,7 +69,7 @@ export default function Email() {
         </div>
       </section>
       <section>
-        <div className="py-24 w-full max-w-lg md:max-w-6xl max-xl:px-5 mx-auto">
+        <div className="py-24 section">
           <h2 className="small-title text-[#2c3338]">Supercharge your email.</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 py-16 gap-10 md:gap-24">
             {perks.map(item =>
@@ -83,7 +83,7 @@ export default function Email() {
         </div>
       </section>
       <section className="bg-[#bbe0fa]">
-        <div className="py-24 w-full max-w-lg md:max-w-6xl max-xl:px-5 mx-auto">
+        <div className="py-24 section">
           <h2 className="small-title pb-20">Communicate like a pro.</h2>
           <div className="grid gap-x-24 gap-y-10 md:grid-cols-2 mb-10 md:mb-24">
             <div>
@@ -103,7 +103,7 @@ export default function Email() {
         </div>
       </section>
       <section>
-        <div className="py-24 w-full max-w-lg md:max-w-6xl max-xl:px-5 mx-auto text-[#055d9c] flex flex-col items-center">
+        <div className="py-24 section text-[#055d9c] flex flex-col items-center">
           <h2 className="small-title mb-20">Try it free for 3 months</h2>
           <div className="grid md:grid-cols-3 gap-x-24 gap-y-10">
             {[{
@@ -135,13 +135,13 @@ export default function Email() {
         </div>
       </section>
       <section className="bg-[#f6f7f7]">
-        <div className="py-16 md:py-32 w-full max-w-lg md:max-w-xl max-xl:px-5 mx-auto">
+        <div className="py-16 md:py-32 section max-w-xl">
           <h2 className="small-title text-center text-gray-800">Migrate seamlessly. Don’t lose a beat.</h2>
           <p className="font-normal mt-6 text-gray-500 text-center">Bring your emails and contacts with you from other platforms and existing accounts. Professional Email makes pulling your old account data into your new inbox a breeze with its simple built-in migration tool.</p>
         </div>
       </section>
       <section className="bg-[#e4f2ed]">
-        <div className="py-16 md:py-32 w-full max-w-lg md:max-w-6xl max-xl:px-5 mx-auto">
+        <div className="py-16 md:py-32 section">
           <h2 className="small-title">Your happiness. Our pleasure.</h2>
           <div className="grid md:grid-cols-3 gap-10 mt-12 text-gray-500 md:h-28">
             {[{text: 'It is a really good service of mail. It is a functional, reliable, well-built service. The look is also really nice!',
@@ -158,7 +158,7 @@ export default function Email() {
         </div>
       </section>
       <section className="bg-[#e9f0f5]">
-        <div className="py-16 md:py-32 w-full max-w-lg md:max-w-6xl max-xl:px-5 mx-auto flex flex-col items-center">
+        <div className="py-16 md:py-32 section flex flex-col items-center">
           <h2 className="small-title text-center text-[#044b7a]">Use the best email service.</h2>
           <p className="font-normal mt-6 text-gray-500 text-lg text-center">Professional Email’s platform, Titan, is the highest-rated email service for small business owners</p>
           <img src="https://wpcom.files.wordpress.com/2022/08/group-22672.png" alt="" width='410' height='63' className="py-8"/>
@@ -166,7 +166,7 @@ export default function Email() {
         </div>
       </section>
       <section>
-        <div className="py-16 md:py-32 w-full max-w-lg md:max-w-6xl max-xl:px-5 mx-auto">
+        <div className="py-16 md:py-32 section">
           <h2 className="small-title text-gray-800">You asked, we answered.</h2>
           <p className="font-normal mt-6 text-gray-500 text-lg">Learn more about Professional Email and the 3-month free trial.</p>
           <div className="grid md:grid-cols-2 gap-x-24 gap-y-16 text-gray-500 mt-20">
@@ -190,7 +190,7 @@ export default function Email() {
         </div>
       </section>
       <section className="bg-[#e4f2ed] text-[#005c44]">
-        <div className="py-12 md:py-32 w-full max-w-lg md:max-w-6xl max-xl:px-5 mx-auto lg:flex gap-20">
+        <div className="py-12 md:py-32 section lg:flex gap-20">
           <div className="flex flex-col justify-center gap-6">
             <p>BEST IN CLASS</p>
             <h2 className="small-title">24/7 Support</h2>
@@ -202,7 +202,7 @@ export default function Email() {
         </div>
       </section>
       <section className="bg-[#facfd2] text-[#4d2054]">
-        <div className="py-12 md:py-32 w-full max-w-lg md:max-w-6xl max-xl:px-5 mx-auto">
+        <div className="py-12 md:py-32 section">
           <h2 className="small-title">Create your professional online presence.</h2>
           <div className="grid md:grid-cols-2 gap-12 md:gap-32 text-lg mt-16">
             <div>
@@ -221,7 +221,7 @@ export default function Email() {
         </div>
       </section>
       <section className="bg-[#055d9c] text-white">
-        <div className="py-32 w-full max-w-lg lg:max-w-6xl max-xl:px-5 mx-auto relative">
+        <div className="py-32 max-lg:max-w-xl section relative">
           <div className="bg-[url('https://s1.wp.com/wp-content/themes/h4/assets/logo-outlines/720.svg')] invert bg-no-repeat bg-right opacity-20 absolute -left-40 top-0 h-full w-[720px]"></div>
           <div className="relative lg:left-1/2 lg:ml-20 lg:w-2/5">
             <h2 className="small-title mb-8">Your domain.<br/> Your email.<br/> Your website.</h2>

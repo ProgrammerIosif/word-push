@@ -8,8 +8,8 @@ export default function CreateBlog() {
     <>
       <section className="bg-[#101517] text-white">
         <Nav />
-        <div className="pt-32 w-full max-w-6xl max-xl:px-5 mx-auto">
-          <h1 className="font-serif text-7xl">Blog with the best.</h1>
+        <div className="pt-12 md:pt-32 w-full max-w-6xl max-xl:px-5 mx-auto">
+          <h1 className="title">Blog with the best.</h1>
           <p className="max-w-4xl text-lg font-normal mt-6">More bloggers and independent creators choose WordPress than any other blogging tool. Tap into intuitive, flexible tools that put writers, bloggers, and creators first.</p>
           <button className="mt-10 bg-white text-black flex justify-center items-center w-40 h-14 rounded-md">Start blogging</button>
           <video width='1200' height='600' className="relative my-16 border-[10px] border-gray-200 rounded-3xl shadow-2xl" src="https://s1.wp.com/wp-content/themes/h4/assets/block-editor/2022-10@2x.mp4" autoPlay loop></video>

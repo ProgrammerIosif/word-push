@@ -10,7 +10,7 @@ export default function WebsiteBuilder() {
           <div className='bg-[url("https://s-origin.wordpress.com/wp-content/themes/h4/assets/section-backgrounds/space.jpg")] opacity-75 bg-center bg-cover absolute h-full w-full'></div>
         </div>
         <Nav />
-        <div className="py-6 md:py-24 w-full max-w-3xl max-xl:px-5 mx-auto grid place-items-center">
+        <div className="py-6 md:py-24 max-w-3xl max-xl:px-5 mx-auto grid place-items-center">
           <img src="https://s1.wp.com/wp-content/themes/h4/assets/logo/wordpress-white.svg" alt="" width='70' height='70'/>
           <h1 className='small-title text-center mt-5 max-w-xl'>Welcome to the world’s most popular website builder.</h1>
           <h2 className='small-title text-center bg-[#0675c4] py-1 rounded-sm mb-8'>Your new website is waiting.</h2>
@@ -19,7 +19,7 @@ export default function WebsiteBuilder() {
         </div>
       </section>
       <section className='text-[#055d9c] bg-white'>
-        <div className="py-16 md:py-24 w-full max-w-lg md:max-w-6xl max-xl:px-5 mx-auto">
+        <div className="py-16 md:py-24 section">
           <h2 className='small-title'>Build a website that grows with you in a few simple steps.</h2>
           <h3 className='text-gray-600 text-xl md:text-3xl font-serif max-w-lg my-6'>So you can focus on sharing your work, growing your audience, and even making money.</h3>
           <div className='grid md:grid-cols-2 gap-10 md:gap-20'>
@@ -54,7 +54,7 @@ export default function WebsiteBuilder() {
         </div>
       </section>
       <section className="bg-[#044b7a] text-white">
-        <div className="py-12 md:py-32 w-full max-w-lg md:max-w-6xl max-xl:px-5 mx-auto relative">
+        <div className="py-12 md:py-32 section relative">
           <div className="relative">
             <img src="https://s1.wp.com/wp-content/themes/h4/assets/webinars/hosts@3x.png" alt="" width='234' height='72'/>
             <h2 className="small-title my-8">Expert help when you need it.</h2>
@@ -65,7 +65,7 @@ export default function WebsiteBuilder() {
         </div>
       </section>
       <section className='bg-[#101517] text-white'>
-        <div className="py-24 w-full max-w-lg md:max-w-6xl max-xl:px-5 mx-auto relative">
+        <div className="py-24 section relative">
           <h2 className="small-title mb-16">Pick from hundreds of themes. For any kind of project.</h2>
           <div className='grid md:grid-cols-2 gap-20'>
             <div className="border boder-white rounded-lg pt-5">
@@ -81,7 +81,7 @@ export default function WebsiteBuilder() {
         </div>
       </section>
       <section className='bg-[#008763] text-white'>
-        <div className="py-24 w-full max-w-lg md:max-w-6xl max-xl:px-5 mx-auto relative">
+        <div className="py-24 section relative">
           <h2 className="small-title mb-16">Find everything you need for a powerful and profitable site.</h2>
           <div className='grid md:grid-cols-2 gap-20'>
             <div className="border boder-white rounded-lg pt-5">
@@ -97,7 +97,7 @@ export default function WebsiteBuilder() {
         </div>
       </section>
       <section className="bg-[#055d9c] text-white">
-        <div className="py-12 md:py-32 w-full max-w-lg md:max-w-6xl max-xl:px-5 mx-auto relative">
+        <div className="py-12 md:py-32 section relative">
           <div className="relative">
             <h2 className="small-title mb-10">Effortless Search Engine Optimization.</h2>
             <h3 className='text-3xl font-serif max-w-lg'>Out-of-the-box SEO tools and SSL certificates come standard.</h3>
@@ -108,7 +108,7 @@ export default function WebsiteBuilder() {
         </div>
       </section>
       <section>
-        <div className="py-20 md:py-32 w-full max-w-lg md:max-w-6xl max-xl:px-5 mx-auto text-gray-500">
+        <div className="py-20 md:py-32 section text-gray-500">
           <h2 className="small-title mb-16 text-center text-[#055d9c]">People love WordPress.com.</h2>
           <div className='grid md:grid-cols-3 gap-20'>
             {[{text: 'I looked into what other bloggers whom I admired were using, and the Cadillac of platforms is WordPress.com, hands down. The themes are breathtaking—even the free ones!—and all of the supporting infrastructure and information is top shelf.',
@@ -137,14 +137,14 @@ export default function WebsiteBuilder() {
         </div>
       </section>
       <section className='bg-[#055d9c] text-white'>
-        <div className="py-20 md:py-32 w-full max-w-lg md:max-w-6xl max-xl:px-5 mx-auto flex flex-col items-center">
+        <div className="py-20 md:py-32 section flex flex-col items-center">
           <h2 className="small-title mb-8 text-center">Your new website is waiting.</h2>
           <p className='text-center'>No code, no manuals, no limits. Unlock the power of the most flexible website builder.</p>
           <button className='bg-[#c9356e] rounded py-2.5 px-4 mt-8'>Start your website</button>
         </div>
       </section>
       <section>
-        <div className="py-16 md:py-32 w-full max-w-lg md:max-w-6xl max-xl:px-5 mx-auto flex flex-col items-center">
+        <div className="py-16 md:py-32 section flex flex-col items-center">
           <h2 className="small-title mb-8 text-center text-[#0675c4]">You asked, we answered.</h2>
           <Questions list={questions}/>
           <button className='bg-[#0675c4] text-white rounded py-2.5 px-4 mt-8'>Start your website</button>

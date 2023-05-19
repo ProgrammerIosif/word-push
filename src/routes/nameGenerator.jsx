@@ -5,20 +5,20 @@ const NameGenerator = () => {
     <>
       <section className="bg-[#007e65] text-white">
         <Nav/>
-        <div className="py-32 w-full max-w-3xl max-xl:px-5 mx-auto grid place-items-center">
-          <h1 className="text-5xl font-semibold">The business name generator</h1>
+        <div className="py-20 md:py-32 section md:max-w-3xl grid place-items-center">
+          <h1 className="text-5xl font-semibold text-center">The business name generator</h1>
           <p className="text-center my-12">You’ve got an idea. Now it needs a name. The WordPress.com company name generator is a one‑stop tool to get you started.</p>
-          <div className="bg-white w-full p-1 rounded flex items-center relative mt-12">
+          <div className="bg-white w-full p-1 rounded flex items-center relative md:mt-12">
             <input className="w-full pr-24 bg-white p-2 text-black focus-visible:outline focus-visible:outline-blue-600 focus-visible:outline-2 rounded-sm" type="text" name="name"/>
             <img className="absolute right-3" src="https://cdn-icons-png.flaticon.com/512/7079/7079548.png" alt="" height='24' width='24'/>
           </div>
         </div>
       </section>
       <section>
-        <div className="py-24 w-full max-w-[1500px] max-2xl:px-5 mx-auto grid place-items-center text-[#303b4f]">
+        <div className="py-12 md:py-24 section grid place-items-center text-[#303b4f]">
           <h2 className="text-3xl font-semibold mb-3">How it works.</h2>
-          <p className="text-center">Are you starting a new online store? A brick-and-mortar salon? Your freelance gig? No matter what you’re creating, the business name generator can help you find a name. Plus it’s free and easy to use.</p>
-          <div className="grid grid-cols-2 w-full px-12 gap-20 mt-16">
+          <p className="text-center max-w-3xl">Are you starting a new online store? A brick-and-mortar salon? Your freelance gig? No matter what you’re creating, the business name generator can help you find a name. Plus it’s free and easy to use.</p>
+          <div className="grid md:grid-cols-2 w-full px-12 gap-10 md:gap-20 mt-16">
             {[{icon: <svg fill='currentColor' className="w-full h-full" height="24" width="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g><path d="M20 12c0-.568-.06-1.122-.174-1.656l1.834-1.612-2-3.464-2.322.786c-.82-.736-1.787-1.308-2.86-1.657L14 2h-4l-.48 2.396c-1.07.35-2.04.92-2.858 1.657L4.34 5.268l-2 3.464 1.834 1.612C4.06 10.878 4 11.432 4 12s.06 1.122.174 1.656L2.34 15.268l2 3.464 2.322-.786c.82.736 1.787 1.308 2.86 1.657L10 22h4l.48-2.396c1.07-.35 2.038-.92 2.858-1.657l2.322.786 2-3.464-1.834-1.613c.113-.535.174-1.09.174-1.657zm-8 4c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z"></path></g></svg>,
                title:'Start brainstorming',
                text: 'Start by entering a few relevant keywords for your business or brand.'},

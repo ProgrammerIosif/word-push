@@ -45,7 +45,7 @@ const Domains = () => {
         </div>
       </section>
       <section className='bg-[#008763] text-white'>
-        <div className='py-12 md:py-24 w-full max-w-lg md:max-w-6xl max-xl:px-5 mx-auto'>
+        <div className='py-12 md:py-24 section'>
           <div className='grid md:grid-cols-2 gap-12 md:gap-24'>
             <div className='flex flex-col justify-center'>
               <h2 className="small-title mb-5">Your domain.<br/> Your identity.</h2>
@@ -84,7 +84,7 @@ const Domains = () => {
         </div>
       </section>
       <section className='text-[#2c3338]'>
-        <div className="pb-28 w-full max-w-lg md:max-w-6xl max-xl:px-5 mx-auto">
+        <div className="pb-28 section">
           <h2 className="small-title py-10 md:py-20">Supercharge your domain.</h2>
           <div className="grid gap-24 md:grid-cols-2">
             <div>
@@ -105,7 +105,7 @@ const Domains = () => {
         </div>
       </section>
       <section className='bg-[#e9f0f5]'>
-        <div className="py-12 md:py-24 w-full max-w-lg md:max-w-6xl max-xl:px-5 mx-auto">
+        <div className="py-12 md:py-24 section">
           <h2 className="small-title font-light text-[#2c3338]">Get more with your domain.</h2>
           <p className='bg-[#044b7a] w-max text-white text-sm py-1 px-4 mt-8 rounded'>Included for free with your domain</p>
           <div className="grid grid-cols-2 lg:grid-cols-3 py-16 gap-8 md:gap-24">
@@ -137,7 +137,7 @@ const Domains = () => {
         </div>
       </section>
       <section>
-        <div className="py-12 md:py-32 w-full max-w-lg md:max-w-6xl max-xl:px-5 mx-auto">
+        <div className="py-12 md:py-32 section">
           <h2 className="small-title text-gray-800">You asked, we answered.</h2>
           <p className="font-normal mt-6 text-gray-500 text-lg">Learn more about Professional Email and the 3-month free trial.</p>
           <div className="grid md:grid-cols-2 gap-x-24 gap-y-8 md:gap-y-16 text-gray-500 mt-10 md:mt-20">
@@ -160,7 +160,7 @@ const Domains = () => {
         </div>
       </section>
       <section className="bg-[#e4f2ed] text-[#005c44]">
-        <div className="py-12 md:py-32 w-full max-w-lg md:max-w-6xl max-xl:px-5 mx-auto lg:flex gap-20">
+        <div className="py-12 md:py-32 section lg:flex gap-20">
           <div className="flex flex-col justify-center gap-6">
             <p>BEST IN CLASS</p>
             <h2 className="small-title">24/7 Support</h2>
@@ -172,7 +172,7 @@ const Domains = () => {
         </div>
       </section>
       <section className="bg-[#facfd2] text-[#4d2054]">
-        <div className="py-12 md:py-32 w-full max-w-lg md:max-w-6xl max-xl:px-5 mx-auto">
+        <div className="py-12 md:py-32 section">
           <h2 className="small-title">Create your professional online presence.</h2>
           <div className="grid md:grid-cols-2 gap-12 md:gap-32 text-lg mt-16">
             <div>
@@ -191,7 +191,7 @@ const Domains = () => {
         </div>
       </section>
       <section className="bg-[#055d9c] text-white">
-        <div className="py-32 w-full max-w-lg lg:max-w-6xl max-xl:px-5 mx-auto relative">
+        <div className="py-32 section relative">
           <div className="bg-[url('https://s1.wp.com/wp-content/themes/h4/assets/logo-outlines/720.svg')] invert bg-no-repeat bg-right opacity-20 absolute -left-40 top-0 h-full w-[720px]"></div>
           <div className="relative lg:left-1/2 lg:ml-20 lg:w-2/5">
             <h2 className="small-title max-w-sm mb-8">Your domain. Your email. Your website.</h2>

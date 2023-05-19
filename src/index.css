@@ -9,6 +9,9 @@
   .small-title{
     @apply font-serif text-5xl md:text-6xl;
   }
+  .section{
+    @apply max-w-lg md:max-w-6xl max-xl:px-5 mx-auto;
+  }
 }
 
 #banner {
