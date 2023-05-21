@@ -8,7 +8,7 @@ export default function CreateBlog() {
     <>
       <section className="bg-[#101517] text-white">
         <Nav />
-        <div className="pt-12 md:pt-32 w-full max-w-6xl max-xl:px-5 mx-auto">
+        <div className="pt-12 md:pt-32 section">
           <h1 className="title">Blog with the best.</h1>
           <p className="max-w-4xl text-lg font-normal mt-6">More bloggers and independent creators choose WordPress than any other blogging tool. Tap into intuitive, flexible tools that put writers, bloggers, and creators first.</p>
           <button className="mt-10 bg-white text-black flex justify-center items-center w-40 h-14 rounded-md">Start blogging</button>
@@ -16,45 +16,45 @@ export default function CreateBlog() {
         </div>
       </section>
       <section className="bg-white -mt-60">
-        <div className="pt-80 w-full max-w-6xl max-xl:px-5 mx-auto">
-          <h2 className="font-serif text-7xl">Simple meet flexible.</h2>
+        <div className="pt-64 md:pt-80 section">
+          <h2 className="title">Simple meet flexible.</h2>
           <p className="max-w-4xl text-lg font-normal mt-6">Whatever you’re publishing. Whoever your audience is. WordPress.com makes it simple to get started. And easy to expand your site as your audience grows.</p>
           <div className="flex gap-5">
             <button className="mt-10 bg-[#101517] text-white flex justify-center items-center w-40 h-14 rounded-md">Start blogging</button>
             <button className="mt-10 border border-black/50 flex justify-center items-center w-40 h-14 rounded-md">Find your theme</button>
           </div>
           <div className="grid grid-cols-1
-                          md:grid-cols-2 gap-24 py-24">
+                          md:grid-cols-2 gap-12 md:gap-24 py-12 md:py-24">
             <img className="md:order-last" src="https://wpcom.files.wordpress.com/2022/12/create-blog-window-camera.jpg" alt="" height='528' width='528' />
             <Blocks color="black" content={blocks1} />
           </div>
-          <img className="relative my-16 border-[10px] border-gray-200 rounded-3xl shadow-2xl" src="https://wpcom.files.wordpress.com/2022/12/create-blog-wang-cheung.jpg" />
+          <img className="relative md:my-16 border-[10px] border-gray-200 rounded-3xl shadow-2xl" src="https://wpcom.files.wordpress.com/2022/12/create-blog-wang-cheung.jpg" />
         </div>
       </section>
-      <section className="bg-[#101517] text-white -mt-[500px]">
-        <div className="pt-[600px] w-full max-w-6xl max-xl:px-5 mx-auto">
-          <h2 className="font-serif text-7xl">You do you.</h2>
-          <p className="max-w-4xl text-lg font-normal mt-6">You’ve got more on your plate than running a blog.<br />WordPress.com meets you where you are.</p>
+      <section className="bg-[#101517] text-white -mt-40 md:-mt-[500px]">
+        <div className="pt-60 md:pt-[600px] section">
+          <h2 className="title">You do you.</h2>
+          <p className="max-w-lg text-lg font-normal mt-6">You’ve got more on your plate than running a blog. WordPress.com meets you where you are.</p>
           <div className="flex gap-5">
             <button className="mt-10 bg-white text-black flex justify-center items-center w-40 h-14 rounded-md">Start blogging</button>
             <button className="mt-10 border border-white flex justify-center items-center w-40 h-14 rounded-md">Find your theme</button>
           </div>
-          <div className="grid grid-cols-2 gap-24 py-24">
+          <div className="grid grid-cols-1
+                          md:grid-cols-2 gap-12 md:gap-24 py-12 md:py-24">
             <img src="https://wpcom.files.wordpress.com/2022/12/create-blog-turntable.jpg" alt="" height='528' width='528' />
             <Blocks color="white" content={blocks2} />
           </div>
         </div>
       </section>
       <section className="bg-[#f6f7f7]">
-        <div className="pt-32 w-full max-w-lg max-xl:px-5 mx-auto
-                        md:max-w-6xl">
-          <h2 className="font-serif text-7xl">See and be seen.</h2>
+        <div className="pt-16 md:pt-32 w-full section">
+          <h2 className="title">See and be seen.</h2>
           <p className="max-w-3xl text-lg font-normal mt-6">You made it. Now it’s time to get it in front of people. With baked in SEO tools, a bustling community, one-click social links, and a bunch of easy ways to get paid, you’re all set.</p>
           <div className="flex gap-5">
             <button className="mt-10 bg-black text-white flex justify-center items-center w-40 h-14 rounded-md">Start blogging</button>
             <button className="mt-10 border border-black flex justify-center items-center w-40 h-14 rounded-md">Find your theme</button>
           </div>
-          <div className="mb-32 grid grid-cols-1 gap-y-12 gap-x-20 my-24
+          <div className="mb-32 grid grid-cols-1 gap-y-12 gap-x-20 mt-12 md:mt-24
                           md:grid-cols-2">
             {[{
               title: 'SEO, to go',
@@ -92,10 +92,10 @@ export default function CreateBlog() {
           <img src="https://wpcom.files.wordpress.com/2022/12/create-blog-chapter-one.png" alt="" />
         </div>
       </section>
-      <section className="bg-[#e9f0f5] -mt-52">
-        <div className="pt-80 w-full max-w-6xl max-xl:px-5 mx-auto">
-          <h2 className="font-serif text-7xl">People love WordPress.com.</h2>
-          <div className="grid grid-cols-3 gap-16 pt-12 pb-28">
+      <section className="bg-[#e9f0f5] -mt-28 md:-mt-52">
+        <div className="pt-52 md:pt-80 section">
+          <h2 className="title">People love WordPress.com.</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-16 pt-12 pb-14 md:pb-28">
             {[{
               text: 'Over the years, I’ve acquired a gratifying number of readers and followers, with more arriving each day, and I owe much of that audience to the tools and opportunities that WordPress.com provides.',
               name: 'Alec N.'
@@ -116,28 +116,28 @@ export default function CreateBlog() {
         </div>
       </section>
       <section>
-        <div className="pt-28 w-full max-w-6xl max-xl:px-5 mx-auto">
-          <h2 className="font-serif text-6xl">You're in control.</h2>
+        <div className="pt-16 md:pt-28 section">
+          <h2 className="title">You're in control.</h2>
           <p className="max-w-4xl text-lg font-normal mt-6">Whatever you’re publishing. Whoever your audience is. WordPress.com makes it simple to get started. And easy to expand your site as your audience grows.</p>
           <div className="flex gap-5">
             <button className="mt-10 bg-[#101517] text-white flex justify-center items-center w-40 h-14 rounded-md">Start blogging</button>
             <button className="mt-10 border border-black/50 flex justify-center items-center w-40 h-14 rounded-md">Find your theme</button>
           </div>
           <div className="grid grid-cols-1
-                          md:grid-cols-2 gap-24 py-24">
+                          md:grid-cols-2 gap-12 md:gap-24 py-12 md:py-24">
             <img className="md:order-last" src="https://wpcom.files.wordpress.com/2022/12/create-blog-scooter.jpg" alt="" height='528' width='528' />
             <Blocks color="black" content={blocks3} />
           </div>
         </div>
       </section>
       <section className="bg-[#e9f0f5]">
-        <div className="py-32 w-full max-w-6xl max-xl:px-5 mx-auto">
-          <h2 className="font-serif text-6xl">Everything you need in one place.</h2>
+        <div className="py-16 md:py-32 section">
+          <h2 className="title">Everything you need in one place.</h2>
           <p className="max-w-4xl text-lg font-normal mt-6">Your WordPress.com site comes with all the most popular blogging tools—and then some.</p>
           {features.map(section =>
             <div>
-              <h2 className="text-3xl mt-20 mb-8 font-serif">{section.title}</h2>
-              <div className="w-full grid grid-cols-3 gap-5">
+              <h2 className="text-3xl mt-10 md:mt-20 mb-8 font-serif">{section.title}</h2>
+              <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-5">
                 {section.cards.map(card =>
                   <div className="bg-white rounded-lg p-7">
                     <div className="h-9 w-9 bg-black p-1.5 rounded-full">
@@ -153,15 +153,15 @@ export default function CreateBlog() {
         </div>
       </section>
       <section>
-        <div className="py-32 w-full max-w-6xl max-xl:px-5 mx-auto grid place-items-center gap-10">
-          <h2 className="font-serif text-6xl">You asked, we answered.</h2>
+        <div className="py-16 md:py-32 section grid place-items-center gap-10">
+          <h2 className="title">You asked, we answered.</h2>
           <Questions list={questions} />
         </div>
       </section>
       <section className="bg-[#055d9c] text-white">
-        <div className="py-32 w-full max-w-6xl max-xl:px-5 mx-auto relative">
+        <div className="py-32 section max-lg:max-w-lg relative">
           <div className="bg-[url('https://s1.wp.com/wp-content/themes/h4/assets/logo-outlines/720.svg')] invert bg-no-repeat bg-right opacity-30 absolute -left-40 top-0 h-full w-[720px]"></div>
-          <div className="relative left-1/2 ml-20 w-2/5">
+          <div className="relative lg:left-1/2 lg:ml-20 lg:w-2/5">
             <h2 className="font-serif text-5xl max-w-lg mb-5">Join the millions of creators publishing with WordPress.com.</h2>
             <p>Build your blog—and your audience—with the same tool that powers almost half the web. Built on lightning-fast, seriously secure, hassle-free hosting. That’s WordPress.com.</p>
             <button className="bg-white text-[#055d9c] p-3 rounded mt-5">Start blogging.</button>

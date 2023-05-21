@@ -59,12 +59,12 @@ function Footer() {
               </ul>
             )}
           </div>
-          <div className="flex py-10 items-center justify-between gap-4 pr-10">
-            <div className="flex gap-5 max-md:flex-col">
+          <div className="flex max-sm:flex-col pb-10 items-center justify-between gap-4 md:pr-10">
+            <div className="flex gap-5">
               <JetpackLink app='Google Play' bgColor='black' color='white' />
               <JetpackLink app='App Store' bgColor='black' color='white' />
             </div>
-            <div className="w-60 h-8 flex gap-5">
+            <div className="w-52 h-8 flex gap-5 items-center">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" >
                 <path fill='#c3c4c7' d="M22.23 5.92a8.21 8.21 0 0 1-2.36.65 4.12 4.12 0 0 0 1.8-2.27 8.22 8.22 0 0 1-2.6 1 4.1 4.1 0 0 0-6.99 3.74 11.65 11.65 0 0 1-8.46-4.29 4.09 4.09 0 0 0-.55 2.06 4.1 4.1 0 0 0 1.82 3.42 4.09 4.09 0 0 1-1.86-.51v.05a4.1 4.1 0 0 0 3.3 4.02 4.1 4.1 0 0 1-1.86.07 4.11 4.11 0 0 0 3.83 2.85 8.24 8.24 0 0 1-5.1 1.76 8.33 8.33 0 0 1-.97-.06 11.62 11.62 0 0 0 6.29 1.84c7.55 0 11.67-6.25 11.67-11.67v-.53a8.3 8.3 0 0 0 2.04-2.13z"></path>
               </svg>
