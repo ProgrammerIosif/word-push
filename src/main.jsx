@@ -16,6 +16,7 @@ import Domains from './routes/domains';
 import NameGenerator from './routes/nameGenerator';
 import WebsiteBuilder from './routes/websiteBuilder';
 import CreateBlog from './routes/createBlog';
+import Pricing from './routes/pricing';
 
 const router = createBrowserRouter([
   {
@@ -53,6 +54,10 @@ const router = createBrowserRouter([
       {
         path: "create-blog",
         element: <CreateBlog />
+      },
+      {
+        path: "pricing",
+        element: <Pricing />
       }
     ],
   },

@@ -14,20 +14,18 @@ const links = [
     ]
   },
   {
+    title: 'Resources',
+    links: [
+      'Logo Maker',
+      'Website Building Tips',
+      'Plans and Pricing'
+    ]
+  },
+  {
     title: 'Features',
     links: [
       'Overview',
       'Google Apps'
-    ]
-  },
-  {
-    title: 'Resources',
-    links: [
-      'WordPress.com Support',
-      'WordPress Forums',
-      'WordPress News',
-      'Website Building Tips',
-      'Logo Maker',
     ]
   },
   {
@@ -51,7 +49,7 @@ function Footer() {
           </Link>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-10 py-12 text-white">
             {links.map(column =>
-              <ul className={column.title === 'Features' ? 'max-md:order-last' : ''}>
+              <ul>
                 <li className="font-semibold">{column.title}</li>
                 {column.links.map(link =>
                   <li className="underline font-light text-[#c3c4c7] mt-3">{link}</li>

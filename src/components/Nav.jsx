@@ -25,7 +25,7 @@ function Nav() {
                     {item}
               </li>
             ))}
-          <li className="py-3 max-lg:hidden">Plans & Pricing</li>
+          <li className="py-3 max-lg:hidden"><Link to='/pricing'>Plans & Pricing</Link></li>
         </ul>
         <div className="flex max-lg:hidden">
           <button>Log In</button>
@@ -90,10 +90,6 @@ const content = [
       {
         name: 'Professional Email',
         link: '/professional-email'
-      },
-      {
-        name: 'Website Design Services',
-        link: '/'
       }
     ]
   },

@@ -165,9 +165,9 @@ function Plans() {
       </div>
 
       {/* table */}
-      <div className='mt-20 grid grid-cols-1 max-md:max-w-sm md:grid-cols-3 md:max-xl:w-[800px] gap-y-16 xl:grid-cols-6'>
+      <div className=' mt-20 grid grid-cols-1 max-md:max-w-sm md:grid-cols-3 md:max-xl:w-[800px] gap-y-16 xl:grid-cols-6'>
         {plans.map((plan,idx) =>
-          <div className={`flex flex-col border md:border-r-0 border-gray-200 relative p-5 basis-full ${idx === 2 || idx === 3 ? '-mt-8' : ''}`}>
+          <div className={`bg-white text-black flex flex-col border md:border-r-0 border-gray-200 relative p-5 basis-full ${idx === 2 || idx === 3 ? '-mt-8' : ''}`}>
             <span className={`${idx === 2 || idx === 3 ? '-mt-2 mb-6' : ''}  bg-black text-white font-medium text-xs w-max rounded-sm px-2`}>{idx === 2 ? 'Popular' : idx === 3 ? 'Best for devs' : ''}</span>
             <div className='h-10 flex items-end'>{idx === 3 ? <img src="https://s1.wp.com/wp-content/themes/h4/landing/marketing/pages/_common/components/plan-business/media/cloud-logo.svg" alt='' width='31' height='18'/> :
                                                   idx === 4 ? <img src="https://s1.wp.com/wp-content/themes/h4/landing/marketing/pages/_common/components/plan-ecommerce/media/woo-logo.svg" alt='' width='30' height='19'/> : ''}</div>
@@ -187,7 +187,7 @@ function Plans() {
             <div className='grow'></div>
             <p className='text-xs font-normal py-5'>STORAGE <br /><br/><span className='bg-gray-100 py-2 px-3 text-xs rounded-lg'>{plan.storage} GB</span></p>
           </div>)}
-        <div className='flex flex-col border border-gray-200 relative p-5 basis-full'>
+        <div className='bg-white text-black flex flex-col border border-gray-200 relative p-5 basis-full'>
           <div className='h-10 flex items-end pb-1'><img src="https://s1.wp.com/wp-content/themes/h4/landing/marketing/pages/_common/components/plan-vip/media/vip-logo.svg" width='38' height='17' alt=''/></div>
           <h4 className='text-4xl font-serif'>Enterprise</h4>
           <p className='text-xs mt-1 h-16'>Deliver an unmatched performance with the highest security standards on our enterprise content platform.</p>
@@ -206,7 +206,6 @@ function Plans() {
           </div>
         </div>
       </div>
-      <div className='mt-10 py-2 rounded border border-gray-300 text-sm font-semibold px-10'>Compare Plans {'>'}</div>
     </div>
   );
 }

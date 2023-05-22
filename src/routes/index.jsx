@@ -1,12 +1,12 @@
 import Nav from '../components/Nav';
 import JetpackLink from '../components/JetpackLink';
+import Plans from '../components/Plans';
 
 import ImageSlider from '../components/index/ImageSlider';
 import ImageGrid from '../components/index/ImageGrid';
 import ProductsMenu from '../components/index/ProductsMenu';
 import SearchBar from '../components/index/SearchBar';
 import Cards from '../components/index/Cards';
-import Plans from '../components/index/Plans';
 
 export default function Index() {
   return (
