@@ -113,7 +113,7 @@ const content = [
     links: [
       {
         name: 'Logo Maker',
-        link: '/',
+        link: '/logo-maker',
       },
       {
         name: 'Business Name Generator',

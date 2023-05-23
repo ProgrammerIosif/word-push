@@ -17,6 +17,7 @@ import NameGenerator from './routes/nameGenerator';
 import WebsiteBuilder from './routes/websiteBuilder';
 import CreateBlog from './routes/createBlog';
 import Pricing from './routes/pricing';
+import LogoMaker from './routes/logoMaker';
 
 const router = createBrowserRouter([
   {
@@ -58,6 +59,10 @@ const router = createBrowserRouter([
       {
         path: "pricing",
         element: <Pricing />
+      },
+      {
+        path: "logo-maker",
+        element: <LogoMaker />
       }
     ],
   },
