@@ -4,7 +4,9 @@ export default function LogoMaker() {
   return (
     <>
       <section className="bg-[#055d9c] text-white relative">
-        <Nav />
+        <div className='relative z-20'>
+          <Nav />
+        </div>
         <div className="py-12 md:py-32 section">
           <div className="relative">
             <h2 className="small-title">Create the perfect logo for your business, company, or website with our logo maker.</h2>

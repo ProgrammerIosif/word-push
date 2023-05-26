@@ -39,7 +39,7 @@ const links = [
 
 function Footer() {
   return (
-    <div className="bg-[#141517]">
+    <footer className="bg-[#141517]">
       <div className="max-w-5xl max-xl:mx-8 mx-auto">
         <div>
           <Link to="/" className='flex mr-8 gap-1 py-[6px]'>
@@ -79,7 +79,7 @@ function Footer() {
           </div>
         </div>
       </div>
-    </div>
+    </footer>
   )
 }
 

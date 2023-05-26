@@ -7,8 +7,8 @@ function Nav() {
   const [dropdownIdx, setDropdownIdx] = useState(0);
   const [dropdownVisibility, setDropdownVisibility] = useState(false);
   return (
-    <>
-      <div className='h-14 flex justify-between px-6 text-lg font-semibold'>
+    <nav>
+      <div className='h-14 flex justify-between px-6 text-lg font-semibold relative'>
         <ul className="flex">
           <li>
             <Link to="/" className='flex mr-8 gap-1 py-[6px]'>
@@ -60,7 +60,7 @@ function Nav() {
       </div>
 
       <Dropdown render={dropdownVisibility} idx={dropdownIdx} y={content[dropdownIdx].y} links={content[dropdownIdx].links}/>
-    </>
+    </nav>
   )
 }
 
@@ -103,7 +103,7 @@ const content = [
       },
       {
         name: 'Google Apps',
-        link: '/'
+        link: '/google'
       }
     ]
   },

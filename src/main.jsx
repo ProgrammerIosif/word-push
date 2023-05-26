@@ -18,6 +18,7 @@ import WebsiteBuilder from './routes/websiteBuilder';
 import CreateBlog from './routes/createBlog';
 import Pricing from './routes/pricing';
 import LogoMaker from './routes/logoMaker';
+import Google from './routes/google';
 
 const router = createBrowserRouter([
   {
@@ -63,6 +64,10 @@ const router = createBrowserRouter([
       {
         path: "logo-maker",
         element: <LogoMaker />
+      },
+      {
+        path: "google",
+        element: <Google />
       }
     ],
   },
