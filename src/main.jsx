@@ -19,6 +19,8 @@ import CreateBlog from './routes/createBlog';
 import Pricing from './routes/pricing';
 import LogoMaker from './routes/logoMaker';
 import Google from './routes/google';
+import Start from './routes/start';
+import Login from './routes/login';
 
 const router = createBrowserRouter([
   {
@@ -71,6 +73,14 @@ const router = createBrowserRouter([
       }
     ],
   },
+  {
+    path: "start",
+    element: <Start />
+  },
+  {
+    path: "log-in",
+    element: <Login />
+  }
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(

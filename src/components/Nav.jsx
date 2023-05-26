@@ -28,8 +28,8 @@ function Nav() {
           <li className="py-3 max-lg:hidden"><Link to='/pricing'>Plans & Pricing</Link></li>
         </ul>
         <div className="flex max-lg:hidden">
-          <button>Log In</button>
-          <button className="ml-8 my-2 px-3 border rounded-md">Get Started</button>
+          <Link className="my-auto" to="/log-in">Log In</Link>
+          <Link className="my-auto ml-8 py-1.5 px-3 border rounded-md" to="/start">Get Started</Link>
         </div>
         {/* mobile only*/}
         <div className="lg:hidden w-8 py-5 flex flex-col justify-between cursor-pointer" onClick={() => setDropdownVisibility(true)}>
@@ -59,7 +59,7 @@ function Nav() {
           </>)}
       </div>
 
-      <Dropdown render={dropdownVisibility} idx={dropdownIdx} y={content[dropdownIdx].y} links={content[dropdownIdx].links}/>
+      <Dropdown render={dropdownVisibility} idx={dropdownIdx} y={content[dropdownIdx+1].y} links={content[dropdownIdx+1].links}/>
     </nav>
   )
 }
@@ -67,6 +67,23 @@ function Nav() {
 export default Nav
 
 const content = [
+  {
+    title: 'Get Started',
+    links: [
+      {
+        name: 'Sign Up',
+        link: '/start'
+      },
+      {
+        name: 'Log In',
+        link: '/log-in'
+      },
+      {
+        name: 'Plans & Pricing',
+        link: '/pricing'
+      }
+    ]
+  },
   {
     title: 'Products',
     y: 178,
