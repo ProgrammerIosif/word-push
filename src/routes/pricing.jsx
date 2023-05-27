@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 import Nav from "../components/Nav"
 import Plans from "../components/Plans"
 import Questions from "../components/Questions"
@@ -6,6 +8,7 @@ import Cards from "../components/pricing/Cards"
 import Blocks from "../components/pricing/Blocks"
 
 export default function Pricing() {
+  window.scrollTo(0, 0);
   return (
     <>
       <section className="bg-[#101517] text-white">
@@ -21,7 +24,7 @@ export default function Pricing() {
             <img src="https://s1.wp.com/wp-content/themes/h4/landing/marketing/pages/pricing-mar-2023/media/built-by-logo.svg" alt=""/>
             <h2 className="small-title my-4">Your site. Built by us.</h2>
             <p className="max-w-xl">Let our team of experts build your WordPress.com site. Whether you need a landing page or a full ecommerce site. We can build it for you.</p>
-            <button className="mt-6 py-3 px-5 border rounded border-white">Learn more</button>
+            <Link to="/start"><button className="mt-6 py-3 px-5 border rounded border-white">Get started</button></Link>
           </div>
           <img width="375" height="273" src="https://s1.wp.com/wp-content/themes/h4/landing/marketing/pages/pricing-mar-2023/media/built-by-image-2x.webp" alt=""/>
         </div>
@@ -38,7 +41,7 @@ export default function Pricing() {
         <div className="pt-40 md:pt-[480px] section">
           <h2 className="small-title">There's beauty in everything.</h2>
           <p className="max-w-3xl pt-4 text-lg">Make your website look stunning with our custom‑made patterns and themes. Transform your design with a click, then magically drag and drop breathtaking layouts.</p>
-          <button className="mt-6 bg-black py-3 px-6 rounded text-white">Build your site</button>
+          <Link to="/start"><button className="mt-6 bg-black py-3 px-6 rounded text-white">Build your site</button></Link>
           <div className="grid grid-cols-1
                           md:grid-cols-2 gap-12 md:gap-24 py-12 md:py-16">
             <Blocks color="black" content={blocks} />
@@ -50,7 +53,7 @@ export default function Pricing() {
         <div className="section py-20">
           <h2 className="small-title pb-8">Your audience is out there.</h2>
           <p className="text-lg max-w-xl">Your site is the start of something. Connect with your audience and reach new people by meeting them where they are.</p>
-          <button className="mt-6 bg-black py-3 px-6 rounded text-white">Start your site</button>
+          <Link to="/start"><button className="mt-6 bg-black py-3 px-6 rounded text-white">Start your site</button></Link>
           <div className="grid md:grid-cols-2 gap-16 mt-16">
             {[{
                 title: 'Say it with a Newsletter.',

@@ -1,11 +1,14 @@
+import { Link } from "react-router-dom";
+
 export default function Features() {
+  window.scrollTo(0, 0);
   return (
     <div className="bg-[#101517] text-white">
       <Nav/>
       <div className="pt-12 md:pt-32 w-full max-w-sm xs:max-w-xl md:max-w-6xl max-xl:px-5 mx-auto mb-32">
         <h1 className="title">Everything.<br />Every. Single. Thing.</h1>
         <p className="max-w-4xl text-lg font-normal mt-6">Whatever you need. Whatever you’re trying to get done. <br/> There’s a feature for that on WordPress.com.</p>
-        <button className="mt-10 bg-[#0675c4] text-white flex justify-center items-center w-32 h-12 rounded-md">Start building</button>
+        <Link to="/start"><button className="mt-10 bg-[#0675c4] text-white flex justify-center items-center w-32 h-12 rounded-md">Start building</button></Link>
         {features.map(section =>
           <div>
             <h2 className="text-3xl mt-20 mb-8 font-serif">{section.title}</h2>
@@ -27,7 +30,7 @@ export default function Features() {
         <div className="w-full max-w-sm xs:max-w-xl md:max-w-6xl max-xl:px-5 mx-auto">
           <h1 className="font-serif text-6xl">Have it all.</h1>
           <p className="max-w-sm text-lg font-normal mt-4">Beauty. Speed. Simplicity. And the power to grow. You don’t need to choose.</p>
-          <button className="mt-6 text-black bg-white flex justify-center items-center w-32 h-12 rounded-md">Start building</button>
+          <Link to="/start"><button className="mt-6 text-black bg-white flex justify-center items-center w-32 h-12 rounded-md">Start building</button></Link>
         </div>
       </div>
     </div>

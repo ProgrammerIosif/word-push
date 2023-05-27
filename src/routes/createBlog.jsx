@@ -1,9 +1,12 @@
+import { Link } from "react-router-dom";
+
 import Blocks from "../components/createBlog/Blocks"
 
 import Nav from "../components/Nav"
 import Questions from "../components/Questions"
 
 export default function CreateBlog() {
+  window.scrollTo(0, 0);
   return (
     <>
       <section className="bg-[#101517] text-white">
@@ -11,7 +14,7 @@ export default function CreateBlog() {
         <div className="pt-12 md:pt-32 section">
           <h1 className="title">Blog with the best.</h1>
           <p className="max-w-4xl text-lg font-normal mt-6">More bloggers and independent creators choose WordPress than any other blogging tool. Tap into intuitive, flexible tools that put writers, bloggers, and creators first.</p>
-          <button className="mt-10 bg-white text-black flex justify-center items-center w-40 h-14 rounded-md">Start blogging</button>
+          <Link to='/start'><button className="mt-10 bg-white text-black flex justify-center items-center w-40 h-14 rounded-md">Start blogging</button></Link>
           <video width='1200' height='600' className="relative my-16 border-[10px] border-gray-200 rounded-3xl shadow-2xl" src="https://s1.wp.com/wp-content/themes/h4/assets/block-editor/2022-10@2x.mp4" autoPlay loop></video>
         </div>
       </section>
@@ -20,8 +23,7 @@ export default function CreateBlog() {
           <h2 className="title">Simple meet flexible.</h2>
           <p className="max-w-4xl text-lg font-normal mt-6">Whatever you’re publishing. Whoever your audience is. WordPress.com makes it simple to get started. And easy to expand your site as your audience grows.</p>
           <div className="flex gap-5">
-            <button className="mt-10 bg-[#101517] text-white flex justify-center items-center w-40 h-14 rounded-md">Start blogging</button>
-            <button className="mt-10 border border-black/50 flex justify-center items-center w-40 h-14 rounded-md">Find your theme</button>
+            <Link to='/start'><button className="mt-10 bg-[#101517] text-white flex justify-center items-center w-40 h-14 rounded-md">Start blogging</button></Link>
           </div>
           <div className="grid grid-cols-1
                           md:grid-cols-2 gap-12 md:gap-24 py-12 md:py-24">
@@ -36,8 +38,7 @@ export default function CreateBlog() {
           <h2 className="title">You do you.</h2>
           <p className="max-w-lg text-lg font-normal mt-6">You’ve got more on your plate than running a blog. WordPress.com meets you where you are.</p>
           <div className="flex gap-5">
-            <button className="mt-10 bg-white text-black flex justify-center items-center w-40 h-14 rounded-md">Start blogging</button>
-            <button className="mt-10 border border-white flex justify-center items-center w-40 h-14 rounded-md">Find your theme</button>
+            <Link to="/start"><button className="mt-10 bg-white text-black flex justify-center items-center w-40 h-14 rounded-md">Start blogging</button></Link>
           </div>
           <div className="grid grid-cols-1
                           md:grid-cols-2 gap-12 md:gap-24 py-12 md:py-24">
@@ -51,8 +52,7 @@ export default function CreateBlog() {
           <h2 className="title">See and be seen.</h2>
           <p className="max-w-3xl text-lg font-normal mt-6">You made it. Now it’s time to get it in front of people. With baked in SEO tools, a bustling community, one-click social links, and a bunch of easy ways to get paid, you’re all set.</p>
           <div className="flex gap-5">
-            <button className="mt-10 bg-black text-white flex justify-center items-center w-40 h-14 rounded-md">Start blogging</button>
-            <button className="mt-10 border border-black flex justify-center items-center w-40 h-14 rounded-md">Find your theme</button>
+            <Link to="/start"><button className="mt-10 bg-black text-white flex justify-center items-center w-40 h-14 rounded-md">Start writing</button></Link>
           </div>
           <div className="mb-32 grid grid-cols-1 gap-y-12 gap-x-20 mt-12 md:mt-24
                           md:grid-cols-2">
@@ -120,8 +120,7 @@ export default function CreateBlog() {
           <h2 className="title">You're in control.</h2>
           <p className="max-w-4xl text-lg font-normal mt-6">Whatever you’re publishing. Whoever your audience is. WordPress.com makes it simple to get started. And easy to expand your site as your audience grows.</p>
           <div className="flex gap-5">
-            <button className="mt-10 bg-[#101517] text-white flex justify-center items-center w-40 h-14 rounded-md">Start blogging</button>
-            <button className="mt-10 border border-black/50 flex justify-center items-center w-40 h-14 rounded-md">Find your theme</button>
+            <Link to="/start"><button className="mt-10 bg-[#101517] text-white flex justify-center items-center w-40 h-14 rounded-md">Start blogging</button></Link>
           </div>
           <div className="grid grid-cols-1
                           md:grid-cols-2 gap-12 md:gap-24 py-12 md:py-24">
@@ -164,7 +163,7 @@ export default function CreateBlog() {
           <div className="relative lg:left-1/2 lg:ml-20 lg:w-2/5">
             <h2 className="font-serif text-5xl max-w-lg mb-5">Join the millions of creators publishing with WordPress.com.</h2>
             <p>Build your blog—and your audience—with the same tool that powers almost half the web. Built on lightning-fast, seriously secure, hassle-free hosting. That’s WordPress.com.</p>
-            <button className="bg-white text-[#055d9c] p-3 rounded mt-5">Start blogging.</button>
+            <Link to="/start"><button className="bg-white text-[#055d9c] p-3 rounded mt-5">Start blogging.</button></Link>
           </div>
         </div>
       </section>

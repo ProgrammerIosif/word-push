@@ -1,6 +1,7 @@
 import Nav from "../components/Nav";
 
 const NameGenerator = () => {
+  window.scrollTo(0, 0);
   return (
     <>
       <section className="bg-[#007e65] text-white">
@@ -9,7 +10,7 @@ const NameGenerator = () => {
           <h1 className="text-5xl font-semibold text-center">The business name generator</h1>
           <p className="text-center my-12">You’ve got an idea. Now it needs a name. The WordPress.com company name generator is a one‑stop tool to get you started.</p>
           <div className="bg-white w-full p-1 rounded flex items-center relative md:mt-12">
-            <input className="w-full pr-24 bg-white p-2 text-black focus-visible:outline focus-visible:outline-blue-600 focus-visible:outline-2 rounded-sm" type="text" name="name"/>
+            <input placeholder="(not functional, just design)" className="w-full pr-24 bg-white p-2 text-black focus-visible:outline focus-visible:outline-blue-600 focus-visible:outline-2 rounded-sm" type="text" name="name"/>
             <img className="absolute right-3" src="https://cdn-icons-png.flaticon.com/512/7079/7079548.png" alt="" height='24' width='24'/>
           </div>
         </div>

@@ -1,6 +1,9 @@
+import { Link } from 'react-router-dom';
+
 import Nav from '../components/Nav'
 
 export default function LogoMaker() {
+  window.scrollTo(0, 0);
   return (
     <>
       <section className="bg-[#055d9c] text-white relative">
@@ -11,7 +14,7 @@ export default function LogoMaker() {
           <div className="relative">
             <h2 className="small-title">Create the perfect logo for your business, company, or website with our logo maker.</h2>
             <p className='max-w-2xl my-8 text-lg'>Make a strong first impression on your company’s website with a great logo. Lucky for you, creating one has never been easier with an online logo maker.<br />No design experience needed!</p>
-            <button className='bg-[#c9356e] py-3 px-5 rounded'>Create your logo now</button>
+            <Link to="/start"><button className='bg-[#c9356e] py-3 px-5 rounded'>Create your logo now</button></Link>
           </div>
         </div>
         <div className="bg-[url('https://s1.wp.com/wp-content/themes/h4/assets/logo-outlines/720.svg')] invert bg-no-repeat bg-right opacity-20 absolute md:right-40 top-0 h-full w-[720px]"></div>
@@ -33,7 +36,7 @@ export default function LogoMaker() {
             </div>
           </div>
           <h2 className='text-4xl md:text-5xl text-center mt-20 md:mt-40 font-serif max-w-lg text-[#055d9c]'>Make a professional logo in a few clicks today.</h2>
-          <button className='py-3 px-6 bg-[#0675c4] text-white mt-8 font-bold rounded'>Create your logo now</button>
+          <Link to="/start"><button className='py-3 px-6 bg-[#0675c4] text-white mt-8 font-bold rounded'>Create your logo now</button></Link>
         </div>
       </section>
     </>

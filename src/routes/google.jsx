@@ -1,6 +1,9 @@
+import { Link } from 'react-router-dom';
+
 import Nav from '../components/Nav'
 
 export default function Google() {
+  window.scrollTo(0, 0);
   return (
     <>
       <section className='bg-[#e74146] text-white min-h-[40vw] relative overflow-hidden'>
@@ -97,7 +100,7 @@ export default function Google() {
         <div className='relative z-10 my-auto max-md:mx-10 md:flex md:flex-col md:items-center md:mx-[10vw] flex-1 pr-8 py-[15vw]'>
           <h2 className='text-4xl md:text-center lg:text-[2.8vw] leading-tight font-semibold'>Get the best web performance for your business site with the power of Google on WordPress.com.</h2>
           <p className='text-xl md:text-center mt-4 opacity-90'>Build your site with our Business Plan to add Google tools and services, no installation required.</p>
-          <button className='bg-white text-[#37476a] py-3 px-6 mt-8 font-semibold rounded'>Get Started {'>'}</button>
+          <Link to="/start"><button className='bg-white text-[#37476a] py-3 px-6 mt-8 font-semibold rounded'>Get Started {'>'}</button></Link>
         </div>
       </section>
     </>

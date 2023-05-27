@@ -1,8 +1,11 @@
+import { Link } from 'react-router-dom';
+
 import Nav from '../components/Nav.jsx'
 
 import Questions from '../components/Questions.jsx';
 
 export default function WebsiteBuilder() {
+  window.scrollTo(0, 0);
   return (
     <>
       <section className='text-white'>
@@ -15,7 +18,7 @@ export default function WebsiteBuilder() {
           <h1 className='small-title text-center mt-5 max-w-xl'>Welcome to the world’s most popular website builder.</h1>
           <h2 className='small-title text-center bg-[#0675c4] py-1 rounded-sm mb-8'>Your new website is waiting.</h2>
           <p className='text-center max-w-lg md:max-w-2xl md:text-lg'>More bloggers, small businesses, and Fortune 500 companies use WordPress.com than all other website builders combined. There’s a good reason, too. It’s the most accessible tool to create a website with drag-and-drop simplicity that’s mobile-friendly. And one that search engines will love.</p>
-          <button className='bg-[#c9356e] py-3 px-4 rounded mt-6 mb-10'>Start your website</button>
+          <Link to="/start"><button className='bg-[#c9356e] py-3 px-4 rounded mt-6 mb-10'>Start your website</button></Link>
         </div>
       </section>
       <section className='text-[#055d9c] bg-white'>
@@ -49,7 +52,7 @@ export default function WebsiteBuilder() {
                   </div>)}
           </div>
           <div className='grid place-items-center'>
-            <button className='mt-8 md:mt-20 bg-[#0675c4] text-white py-2.5 px-4 rounded'>Start your website</button>
+            <Link to="/start"><button className='mt-8 md:mt-20 bg-[#0675c4] text-white py-2.5 px-4 rounded'>Start your website</button></Link>
           </div>
         </div>
       </section>
@@ -102,7 +105,7 @@ export default function WebsiteBuilder() {
             <h2 className="small-title mb-10">Effortless Search Engine Optimization.</h2>
             <h3 className='text-3xl font-serif max-w-lg'>Out-of-the-box SEO tools and SSL certificates come standard.</h3>
             <p className='max-w-xl my-4'>WordPress.com comes stock with everything you need for an SEO-friendly website. Included content delivery networks (CDN) ensure your website’s pages load fast. The included SSL certificates make your site’s security a breeze. Simple on-page SEO elements help your site rank higher and drive more traffic. And Jetpack-powered XML sitemaps keep your pages organized and auto-updated for search engines.</p>
-            <button className='bg-[#c9356e] py-2.5 px-4 text-sm rounded'>Start your website</button>
+            <Link to="/start"><button className='bg-[#c9356e] py-2.5 px-4 text-sm rounded'>Start your website</button></Link>
           </div>
           <div className="bg-[url('https://s1.wp.com/wp-content/themes/h4/assets/logo-outlines/720.svg')] invert bg-no-repeat bg-right opacity-20 absolute -right-40 top-0 h-full w-[720px]"></div>
         </div>
@@ -140,14 +143,14 @@ export default function WebsiteBuilder() {
         <div className="py-20 md:py-32 section flex flex-col items-center">
           <h2 className="small-title mb-8 text-center">Your new website is waiting.</h2>
           <p className='text-center'>No code, no manuals, no limits. Unlock the power of the most flexible website builder.</p>
-          <button className='bg-[#c9356e] rounded py-2.5 px-4 mt-8'>Start your website</button>
+          <Link to="/start"><button className='bg-[#c9356e] rounded py-2.5 px-4 mt-8'>Start your website</button></Link>
         </div>
       </section>
       <section>
         <div className="py-16 md:py-32 section flex flex-col items-center">
           <h2 className="small-title mb-8 text-center text-[#0675c4]">You asked, we answered.</h2>
           <Questions list={questions}/>
-          <button className='bg-[#0675c4] text-white rounded py-2.5 px-4 mt-8'>Start your website</button>
+          <Link to="/start"><button className='bg-[#0675c4] text-white rounded py-2.5 px-4 mt-8'>Start your website</button></Link>
         </div>
       </section>
       <section className='text-white'>
@@ -158,7 +161,7 @@ export default function WebsiteBuilder() {
           <img src="https://s1.wp.com/wp-content/themes/h4/assets/logo/wordpress-white.svg" alt="" width='70' height='70'/>
           <h1 className='small-title text-center my-8'>You’re just a few clicks away from the website you’ve always wanted.</h1>
           <p className='text-center max-w-2xl text-lg'>No code, no manuals, no limits. Unlock the power of the world’s most flexible website builder. WordPress.com gives you everything you need to create your website today. Managed WordPress hosting, with more speed, security, bandwidth and storage. Your own domain, a world-class support team, real-time backups and updates, and so much more.</p>
-          <button className='bg-[#c9356e] py-3 px-4 rounded mt-6 mb-10'>Start your website</button>
+          <Link to="/start"><button className='bg-[#c9356e] py-3 px-4 rounded mt-6 mb-10'>Start your website</button></Link>
         </div>
       </section>
     </>

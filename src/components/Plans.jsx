@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 // plan : title, description, priceM , priceA
 const plans = [
@@ -175,7 +176,7 @@ function Plans() {
             <p className='text-xs mt-1 h-16'>{plan.description}</p>
             <p className='text-5xl font-serif'><sup className='text-base align-top relative top-[1px] mr-1'>€</sup>{activeButton === 'monthly' ? plan.priceM : plan.priceY}</p>
             <p className='text-xs py-1 text-gray-500'>{idx === 0 ? 'No expiration date' : 'per month, billed ' + activeButton}</p>
-            <button  className={`sticky top-2 font-medium ${plan.buttonColor} text-white h-10 rounded-md my-4 text-sm`}>{idx === 0 ? 'Start with Free' : 'Get ' + plan.name}</button>
+            <Link to="/start"  className={`button sticky top-2 font-medium ${plan.buttonColor} text-white h-10 flex items-center justify-center rounded-md my-4 text-sm`}>{idx === 0 ? 'Start with Free' : 'Get ' + plan.name}</Link>
             <p className={`h-10 py-3 text-xs ${plan.textColor} font-bold`}>{idx != 0 ? `Everything in ${plans[idx-1].name}, plus:` : ''}</p>
             <ul>
             {plan.features.map(feature => <li className={`${feature === "Free domain for one year" && activeButton === 'monthly' ? 'line-through font-bold' : feature === "Free domain for one year" ? 'font-bold' : ''} text-xs mb-4`}>{feature}</li>)}
@@ -193,7 +194,7 @@ function Plans() {
           <p className='text-xs mt-1 h-16'>Deliver an unmatched performance with the highest security standards on our enterprise content platform.</p>
           <div className='h-12'></div>
           <p className='text-xs py-1'>Starts at <b>US$25,000</b> yearly.</p>
-          <button  className='sticky top-2 font-medium bg-[#2c3338] text-white h-10 rounded-md my-4 text-sm'>Get in touch</button>
+          <Link to="/start" className='button sticky top-2 font-medium bg-[#2c3338] text-white h-10 rounded-md my-4 text-sm flex items-center justify-center'>Get in touch</Link>
           <div className='flex flex-wrap gap-4 pt-4'>
             <img width='38' height='27' src="https://s1.wp.com/wp-content/themes/h4/landing/marketing/pages/_common/components/plan-vip/media/time-logo.svg" alt="time logo" />
             <img width='60' height='27' src="https://s1.wp.com/wp-content/themes/h4/landing/marketing/pages/_common/components/plan-vip/media/slack-logo.svg" alt="slack logo" />

@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import Nav from '../components/Nav';
 import JetpackLink from '../components/JetpackLink';
 import Plans from '../components/Plans';
@@ -9,6 +11,7 @@ import SearchBar from '../components/index/SearchBar';
 import Cards from '../components/index/Cards';
 
 export default function Index() {
+  window.scrollTo(0, 0);
   return (
     <>
       <section className="text-[#003c56]">
@@ -16,7 +19,7 @@ export default function Index() {
         <div className="pt-12 sm:pt-32 w-full max-w-6xl max-xl:px-5 mx-auto text-black">
             <h1 className="title"><span className="">Welcome to the world’s</span><br /><span>most popular website builder.</span></h1>
             <p className="max-w-4xl text-lg font-normal mt-6 max-sm:hidden">42% of the web is built on WordPress. More bloggers, small businesses, and Fortune 500 companies use WordPress than all other options combined. Join the millions of people that call WordPress.com home.</p>
-            <button className="mt-10 bg-[#0675c4] text-white flex justify-center items-center w-40 h-12 rounded-md">Get Started</button>
+            <Link to="/start"><button className="mt-10 bg-[#0675c4] text-white flex justify-center items-center w-40 h-12 rounded-md">Get Started</button></Link>
             <ImageSlider/>
         </div>
       </section>
@@ -25,7 +28,7 @@ export default function Index() {
           <div className="mb-20 sm:mb-60 sm:pt-[180px] w-full max-w-6xl mx-auto text-white">
             <h2 className="title max-w-2xl">Stand out with stylish themes and patterns</h2>
             <p className="max-w-4xl text-lg font-normal mt-6">Instantly transform the look and feel of your site with beautifully crafted themes and one-click layouts.</p>
-            <button className="mt-10 bg-white text-black font-medium flex justify-center items-center w-48 h-12 rounded-sm">Find your theme</button>
+            <Link to="/started"><button className="mt-10 bg-white text-black font-medium flex justify-center items-center w-48 h-12 rounded-sm" to="/start">Find your theme</button></Link>
           </div>
           <ImageGrid/>
           <div className="my-20 sm:my-60 w-full max-w-6xl mx-auto text-white">
@@ -39,7 +42,7 @@ export default function Index() {
         <div className="pt-20 md:pt-32 w-full max-w-6xl max-xl:px-5 mx-auto">
             <h2 className="title">Infinitely efortless editing</h2>
             <p className="max-w-xl text-lg font-normal mt-6">Magically drag, drop and draw on a huge collection of design patterns, features, and layouts with the intuitive, built-in block editor.</p>
-            <button className="mt-10 bg-black text-white flex justify-center items-center w-40 h-14 rounded-md font-medium">Start creating</button>
+            <Link to="/start"><button className="mt-10 bg-black text-white flex justify-center items-center w-40 h-14 rounded-md font-medium">Start creating</button></Link>
             <video width='1200' height='600' className="my-16" src="https://s1.wp.com/wp-content/themes/h4/assets/block-editor/2022-10@2x.mp4" autoPlay loop></video>
         </div>
       </section>
@@ -47,7 +50,7 @@ export default function Index() {
         <div className="pt-20 md:pt-32 w-full max-w-6xl max-xl:px-5 mx-auto">
             <h2 className="title">Your home on the web</h2>
             <p className="max-w-xl text-lg font-normal mt-6">Nothing sets your site apart faster than a unique address on the web. From <b>.com</b> to <b>.blog</b>, there’s a one-of-a-kind domain with your name on it. And your first year is free with any annual paid plan.</p>
-            <button className="my-12 bg-black text-white flex justify-center items-center w-48 h-12 rounded-md font-medium">Find your domain</button>
+            <Link to="/domains"><button className="my-12 bg-black text-white flex justify-center items-center w-48 h-12 rounded-md font-medium">Find your domain</button></Link>
             <SearchBar classes={'text-3xl h-20 sm:h-28'}/>
         </div>
       </section>
@@ -55,7 +58,7 @@ export default function Index() {
         <div className="pt-36 sm:pt-60 w-full max-w-6xl max-xl:px-5 mx-auto">
             <h2 className="title max-w-5xl">Basically, the best managed WordPress hosting on the planet.</h2>
             <p className="max-w-3xl text-lg font-normal mt-6">Say hello to the next-level hosting performance made possible when you deeply integrate every piece of hardware and line of code to run WordPress at speed and scale.</p>
-            <button className="mt-12 bg-[#0675c4] text-white flex justify-center items-center w-48 h-12 rounded-md font-medium mb-24">Explore hosting</button>
+            <Link to="/hosting"><button className="mt-12 bg-[#0675c4] text-white flex justify-center items-center w-48 h-12 rounded-md font-medium mb-24">Explore hosting</button></Link>
             <Cards/>
         </div>
       </section>
@@ -74,13 +77,13 @@ export default function Index() {
                 <img width='600' height='600' src="https://s1.wp.com/wp-content/themes/h4/landing/marketing/pages/hp-2022-oct/media/desktop/real-support-image-2x.webp" alt="" />
                 <h3 className='font-serif text-4xl md:text-5xl my-5'>Real support</h3>
                 <p>Our Happiness Engineers are always on hand to help. From live chat and expert email guidance to lively community forums – if you get stuck, or just need a hand getting set up, we’re here to make things happen.</p>
-                <button className='mt-6 bg-[#0675c4] text-white flex justify-center items-center w-32 h-12 rounded-md font-medium'>Get help</button>
+                <Link to="/start"><button className='mt-6 bg-[#0675c4] text-white flex justify-center items-center w-32 h-12 rounded-md font-medium'>Get started</button></Link>
               </div>
               <div>
                 <img width='600' height='600' src="https://s1.wp.com/wp-content/themes/h4/landing/marketing/pages/hp-2022-oct/media/desktop/built-by-image-2x.webp" alt="" />
                 <h3 className='font-serif text-4xl md:text-5xl my-5'>Website design service</h3>
                 <p>Creating a site or store from scratch can take time. Sit back as our expert team builds a site you’ll fall in love with. From single page sites to full-blown stores, we’ll help you make it happen, sooner.</p>
-                <button className='mt-6 bg-[#0675c4] text-white flex justify-center items-center w-32 h-12 rounded-md font-medium'>Get started</button>
+                <Link to="/start"><button className='mt-6 bg-[#0675c4] text-white flex justify-center items-center w-32 h-12 rounded-md font-medium'>Get started</button></Link>
               </div>
             </div>
         </div>
@@ -92,7 +95,7 @@ export default function Index() {
             <h2 className='text-5xl font-serif mt-8'>Think WordPress isn’t for the enterprise? Think again.</h2>
             <p className='my-8'>What do Salesforce, Al Jazeera, Capgemini, Facebook, and Merck have in common?</p>
             <p>They trust WordPress VIP—the enterprise platform built on WordPress—to deliver performance at scale while meeting the highest security standards. Starting at US$25,000/year</p>
-            <button className='mt-10 bg-[#0675c4] text-white flex justify-center items-center w-32 h-12 rounded-md font-medium'>Get a demo</button>
+            <Link to="/start"><button className='mt-10 bg-[#0675c4] text-white flex justify-center items-center w-32 h-12 rounded-md font-medium'>Get a demo</button></Link>
           </div>
             <div className='max-lg:hidden xl:-mr-32'>
               <SearchBar classes={'bg-gray-400 h-20 rounded-b-none text-black text-xl'}/>

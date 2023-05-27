@@ -1,8 +1,11 @@
+import { Link } from 'react-router-dom';
+
 import Nav from '../components/Nav'
 
 import SearchwithImage from '../components/domains/SearchwithImage'
 
 const Domains = () => {
+  window.scrollTo(0, 0);
   return (
     <>
       <Nav />
@@ -13,7 +16,7 @@ const Domains = () => {
               <h1 className="small-title text-[#055d9c]">Great ideas start with a good domain name</h1>
               <p className="max-w-4xl text-lg font-normal mt-6 text-[#c9356e]">Choose from 350+ endings with WordPress.com domain name search</p>
               <div className='flex gap-2'>
-                <input className='w-full border h-12 my-5 rounded pl-3 border-[#c9356e]' type="text" name="domain" placeholder='Find your domain'/>
+                <input className='w-full border h-12 my-5 rounded pl-3 border-[#c9356e]' type="text" name="domain" placeholder='Find your domain (not functional)'/>
                 <button className="my-5 bg-[#c9356e] text-white flex justify-center items-center w-40 h-12 rounded-md">Search</button>
               </div>
             </div>
@@ -91,7 +94,7 @@ const Domains = () => {
               <img className="rounded-xl" src="https://wpcom.files.wordpress.com/2021/12/freedomain.png" alt="" />
               <h3 className="font-semibold text-2xl my-5">Free domain for a year with an annual plan</h3>
               <p>Enjoy one year of a free domain or domain transfer when you get a WordPress.com annual plan.</p>
-              <p className='underline text-lg mt-4'>Explore WordPress.com plans</p>
+              <Link to="/pricing"><p className='underline text-lg mt-4'>Explore WordPress.com plans</p></Link>
             </div>
             <div>
               <img className="rounded-xl" src="https://wpcom.files.wordpress.com/2021/12/domainsettings.png" alt="" />
@@ -166,7 +169,6 @@ const Domains = () => {
             <h2 className="small-title">24/7 Support</h2>
             <p className="text-lg -mb-3">Get hands-on support from our experts through email or live chat.</p>
             <p className="text-lg">Whether you’re migrating from another provider or trying to create multiple email accounts we can always help. We’re excited to help you build and own your piece of the web.</p>
-            <p className="font-medium underline text-lg">Visit our support center {'>'}</p>
           </div>
           <img src="https://s1.wp.com/wp-content/themes/h4/assets/titan-promo/support@2x.jpg" alt="" width='528' height='428'/>
         </div>
@@ -179,13 +181,13 @@ const Domains = () => {
               <img className="rounded-xl" src="https://s1.wp.com/wp-content/themes/h4/assets/titan-promo/plans@2x.jpg" alt=""/>
               <h3 className="text-3xl font-semibold mb-5 mt-8">Website plans for everyone.</h3>
               <p>We’ve got plans for book clubs, businesspeople, bird fanciers, Bond impersonators, bed and breakfast owners, sellers, and anyone else who wants to get online.</p>
-              <p className="mt-4 font-semibold underline">Explore plans {'>'}</p>
+              <Link to="/pricing"><p className="mt-4 font-semibold underline">Explore plans {'>'}</p></Link>
             </div>
             <div>
               <img src="https://wpcom.files.wordpress.com/2022/01/email402x.jpg" alt=""/>
               <h3 className="text-3xl font-semibold mb-5 mt-8">Email at your domain.</h3>
               <p>Get a 3-months free trial with professional email. Build and grow your online presence with a custom domain and personalized email address from WordPress.com.</p>
-              <p className="mt-4 font-semibold underline">Learn more {'>'}</p>
+              <Link to="/professional-email"><p className="mt-4 font-semibold underline">Learn more {'>'}</p></Link>
             </div>
           </div>
         </div>
@@ -196,7 +198,7 @@ const Domains = () => {
           <div className="relative lg:left-1/2 lg:ml-20 lg:w-2/5">
             <h2 className="small-title max-w-sm mb-8">Your domain. Your email. Your website.</h2>
             <p>WordPress powers more than 42% of the web. Join the <br/> community. We’re committed to helping you succeed.</p>
-            <button className="bg-[#c9356e] p-3 rounded mt-8">Get started today</button>
+            <Link to="/start"><button className="bg-[#c9356e] p-3 rounded mt-8">Get started today</button></Link>
           </div>
         </div>
       </section>

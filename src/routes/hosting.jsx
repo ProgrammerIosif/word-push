@@ -1,8 +1,11 @@
+import { Link } from 'react-router-dom';
+
 import Nav from '../components/Nav'
 
 import Plans from '../components/hosting/Plans'
 
 export default function Hosting() {
+  window.scrollTo(0, 0);
   return (
     <>
       <section className="bg-gradient-to-b from-[#0b4f7b] to-[#101517] text-white">
@@ -12,7 +15,7 @@ export default function Hosting() {
           <h2 className="title mt-5">Basically, the best<br/>managed WordPress<br/>hosting on the planet</h2>
           <p className="text-lg font-normal mt-6 max-w-lg">Whatever you need. Whatever you’re trying to get done. There’s a feature for that on WordPress.com.</p>
           <p className="text-lg font-normal mt-4">Meet WordPress.com managed hosting.</p>
-          <button className="mt-6 bg-white text-black flex justify-center items-center w-36 h-12 rounded-md">Get Started</button>
+          <Link to="/start"><button className="mt-6 bg-white text-black flex justify-center items-center w-36 h-12 rounded-md">Get Started</button></Link>
         </div>
       </section>
       <section className='bg-[#101517] text-white'>
@@ -34,7 +37,7 @@ export default function Hosting() {
                   <p className='text-[#9da0a3] pt-3'>{item.text}</p>
                 </div>)}
             </div>
-            <button className='w-80 max-w-full h-12 border border-opacity-40 border-[#007cba] my-20 rounded hover:underline'>{section.button}</button>
+            <Link to="/start"><button className='w-80 max-w-full h-12 border border-opacity-40 border-[#007cba] my-20 rounded hover:underline'>{section.button}</button></Link>
           </div>)}
         <h2 className='title w-full max-w-4xl max-xl:px-5 mx-auto'>What other builders are saying</h2>
         <div className='py-16 overflow-x-scroll'>

@@ -1,8 +1,10 @@
+import { Link } from "react-router-dom";
 import Nav from "../components/Nav";
 
 import SearchBar from "../components/email/SearchBar";
 
 export default function Email() {
+  window.scrollTo(0, 0);
   return (
     <>
       <Nav />
@@ -11,7 +13,7 @@ export default function Email() {
           <div className="flex flex-col justify-center">
             <h1 className="small-title text-[#055d9c]">Stand out with<br />Professional Email.</h1>
             <p className="max-w-4xl md:text-lg font-normal mt-6">Build and grow your online presence with a custom domain and <br />personalized email address from WordPress.com.</p>
-            <button className="my-5 bg-[#0675c4] text-white flex justify-center items-center w-40 h-12 rounded-md">Start your free trial</button>
+            <Link to="/start"><button className="my-5 bg-[#0675c4] text-white flex justify-center items-center w-40 h-12 rounded-md">Start your free trial</button></Link>
             <p className="text-gray-500 text-sm">Free for the first 3 months.</p>
           </div>
           <div className="relative flex justify-center mr-5 max-md:my-10">
@@ -64,7 +66,7 @@ export default function Email() {
             </div>
             <img className="border boder-white rounded-lg" src="https://s1.wp.com/wp-content/themes/h4/assets/titan-promo/reminders@2x.png" alt="" />
           </div>
-          <button className="my-5 bg-[#f5e6b3] text-black flex justify-center items-center w-40 h-12 rounded-md">Get started</button>
+          <Link to="/start"><button className="my-5 bg-[#f5e6b3] text-black flex justify-center items-center w-40 h-12 rounded-md">Get started</button></Link>
           <p>Choose a domain. Add an email address. Own your online brand.</p>
         </div>
       </section>
@@ -131,7 +133,7 @@ export default function Email() {
                   <p className="mt-3 text-gray-500">{item.text}</p>
                 </div>)}
           </div>
-          <button className="mt-20 bg-sky-600 text-white w-32 h-12">Let's go!</button>
+          <Link to="/start"><button className="mt-20 bg-sky-600 text-white w-32 h-12">Let's go!</button></Link>
         </div>
       </section>
       <section className="bg-[#f6f7f7]">
@@ -196,7 +198,6 @@ export default function Email() {
             <h2 className="small-title">24/7 Support</h2>
             <p className="text-lg -mb-3">Get hands-on support from our experts through email or live chat.</p>
             <p className="text-lg">Whether you’re migrating from another provider or trying to create multiple email accounts we can always help. We’re excited to help you build and own your piece of the web.</p>
-            <p className="font-medium underline text-lg">Visit our support center {'>'}</p>
           </div>
           <img src="https://s1.wp.com/wp-content/themes/h4/assets/titan-promo/support@2x.jpg" alt="" width='528' height='428'/>
         </div>
@@ -209,13 +210,13 @@ export default function Email() {
               <img className="rounded-xl" src="https://s1.wp.com/wp-content/themes/h4/assets/titan-promo/plans@2x.jpg" alt=""/>
               <h3 className="text-3xl font-semibold mb-5 mt-8">Website plans for everyone.</h3>
               <p>We’ve got plans for book clubs, businesspeople, bird fanciers, Bond impersonators, bed and breakfast owners, sellers, and anyone else who wants to get online.</p>
-              <p className="mt-4 font-semibold underline">Explore plans {'>'}</p>
+              <Link to="/pricing"><p className="mt-4 font-semibold underline">Explore plans {'>'}</p></Link>
             </div>
             <div>
-              <img src="https://wpcom.files.wordpress.com/2022/01/email402x.jpg" alt=""/>
-              <h3 className="text-3xl font-semibold mb-5 mt-8">Email at your domain.</h3>
-              <p>Get a 3-months free trial with professional email. Build and grow your online presence with a custom domain and personalized email address from WordPress.com.</p>
-              <p className="mt-4 font-semibold underline">Learn more {'>'}</p>
+              <img src="https://s1.wp.com/wp-content/themes/h4/assets/titan-promo/domains@2x.jpg" alt=""/>
+              <h3 className="text-3xl font-semibold mb-5 mt-8">Domains for anything.</h3>
+              <p>From .com to .club, or whatever else you can dream up, there’s a memorable — and apt! — domain for your site.</p>
+              <Link to="/domains"><p className="mt-4 font-semibold underline">Find your domain {'>'}</p></Link>
             </div>
           </div>
         </div>
@@ -226,7 +227,7 @@ export default function Email() {
           <div className="relative lg:left-1/2 lg:ml-20 lg:w-2/5">
             <h2 className="small-title mb-8">Your domain.<br/> Your email.<br/> Your website.</h2>
             <p>WordPress powers more than 42% of the web. Join the <br/> community. We’re committed to helping you succeed.</p>
-            <button className="bg-[#c9356e] p-3 rounded mt-8">Get started today</button>
+            <Link to="/start"><button className="bg-[#c9356e] p-3 rounded mt-8">Get started today</button></Link>
           </div>
         </div>
       </section>

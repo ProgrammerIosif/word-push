@@ -14,6 +14,12 @@
   }
 }
 
+button:hover,
+.button:hover{
+  filter: brightness(85%);
+  text-decoration-line: underline;
+}
+
 #banner {
   background: url(https://s1.wp.com/wp-content/themes/h4/landing/marketing/pages/hp-2022-oct/media/desktop/brand-logos.svg)
     0% 80%;
