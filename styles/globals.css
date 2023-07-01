@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  #__next {
+    @apply select-none overflow-x-hidden;
+  }
+  .title{
+    @apply font-serif text-5xl sm:text-6xl md:text-7xl;
+  }
+  .small-title{
+    @apply font-serif text-5xl md:text-6xl;
+  }
+  .section{
+    @apply max-w-lg md:max-w-6xl max-xl:px-5 mx-auto;
+  }
+}
+
+
+button:hover,
+.button:hover{
+  filter: brightness(85%);
+  text-decoration-line: underline;
+}
+
+#banner {
+  background: url(https://s1.wp.com/wp-content/themes/h4/landing/marketing/pages/hp-2022-oct/media/desktop/brand-logos.svg)
+    0% 80%;
+  background-repeat: repeat-x;
+  background-size: cover;
+  animation: moves 1000s infinite linear;
+  height: 70px;
+  margin-top: 6rem;
+  display: flex;
+}
+
+@keyframes moves {
+  to {
+    background-position: -2000vw 80%;
+  }
+}
+
+.lp-icon-shield-anim{
+  animation: etRMJ7ETBXn4_ts__ts 3s linear .15s 1 normal forwards;
+}
