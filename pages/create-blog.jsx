@@ -5,6 +5,7 @@ import Questions from "@/components/Questions"
 import Footer from "@/components/Footer";
 
 import Blocks from "@/components/createBlog/Blocks"
+import ImageSlider from "@/components/createBlog/ImageSlider";
 
 export default function CreateBlog() {
   return (
@@ -15,7 +16,7 @@ export default function CreateBlog() {
           <h1 className="title">Blog with the best.</h1>
           <p className="max-w-4xl text-lg font-normal mt-6">More bloggers and independent creators choose WordPress than any other blogging tool. Tap into intuitive, flexible tools that put writers, bloggers, and creators first.</p>
           <Link href='/start'><button className="mt-10 bg-white text-black flex justify-center items-center w-40 h-14 rounded-md">Start blogging</button></Link>
-          <video width='1200' height='600' className="relative my-16 border-[10px] border-gray-200 rounded-3xl shadow-2xl" src="https://s1.wp.com/wp-content/themes/h4/assets/block-editor/2022-10@2x.mp4" autoPlay loop></video>
+          <ImageSlider/>
         </div>
       </section>
       <section className="bg-white -mt-60">

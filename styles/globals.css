@@ -41,6 +41,40 @@ button:hover,
   }
 }
 
-.lp-icon-shield-anim{
-  animation: etRMJ7ETBXn4_ts__ts 3s linear .15s 1 normal forwards;
+/* slider */
+@keyframes slide-to-right {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
 }
+
+@keyframes slide-to-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@media (min-width:1024) {
+  .slider-container:hover .slider {
+    animation-play-state: paused;
+  }
+}
+
+.slider-to-left {
+  animation: 70s slide-to-left infinite linear;
+}
+
+.slider-to-right {
+  animation: 70s slide-to-right infinite linear;
+}
+
+.slider img {
+  display: inline-block;
+}
+

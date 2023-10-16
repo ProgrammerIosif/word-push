@@ -5,23 +5,49 @@ import JetpackLink from '@/components/JetpackLink';
 import Plans from '@/components/Plans';
 import Footer from '@/components/Footer';
 
-import ImageSlider from '@/components/index/ImageSlider';
 import ImageGrid from '@/components/index/ImageGrid';
 import ProductsMenu from '@/components/index/ProductsMenu';
 import SearchBar from '@/components/index/SearchBar';
 import Cards from '@/components/index/Cards';
+import ImageSlider from '@/components/index/ImageSlider';
 
 export default function Index() {
   return (
     <>
-      <section className="text-[#003c56]">
+      <section className="bg-[#101517] text-white">
         <Nav/>
-        <div className="pt-12 sm:pt-32 w-full max-w-6xl max-xl:px-5 mx-auto text-black">
+        <div className="pt-12 sm:pt-32 w-full max-w-6xl max-xl:px-5 mx-auto">
             <h1 className="title"><span className="">Welcome to the world’s</span><br /><span>most popular website builder.</span></h1>
             <p className="max-w-4xl text-lg font-normal mt-6 max-sm:hidden">42% of the web is built on WordPress. More bloggers, small businesses, and Fortune 500 companies use WordPress than all other options combined. Join the millions of people that call WordPress.com home.</p>
-            <Link href="/start"><button className="mt-10 bg-[#0675c4] text-white flex justify-center items-center w-40 h-12 rounded-md">Get Started</button></Link>
-            <ImageSlider/>
+            <Link href="/start"><button className="my-10 bg-white text-black flex justify-center items-center w-40 h-12 rounded-md">Get Started</button></Link>
         </div>
+        <ImageSlider direction={'right'} images={
+          [
+            'https://wpcom.files.wordpress.com/2023/09/theme-3-2-2x.webp',
+            'https://wpcom.files.wordpress.com/2023/09/theme-12-2x.webp',
+            'https://wpcom.files.wordpress.com/2023/09/theme-11-2x.webp',
+            'https://wpcom.files.wordpress.com/2023/08/theme-3-2x-3.webp',
+            'https://wpcom.files.wordpress.com/2023/08/theme-1-2x-2.webp'
+          ]
+        }/>
+        <ImageSlider direction={'left'} images={
+          [
+            'https://wpcom.files.wordpress.com/2023/09/theme-15-2x.webp',
+            'https://wpcom.files.wordpress.com/2023/08/theme-4-2x-2.webp',
+            'https://wpcom.files.wordpress.com/2023/08/theme-6-2x-2.webp',
+            'https://wpcom.files.wordpress.com/2023/09/theme-14-2x.webp',
+            'https://wpcom.files.wordpress.com/2023/09/theme-19-2-2x.webp'
+          ]
+        }/>
+        <ImageSlider direction={'right'} images={
+          [
+            'https://wpcom.files.wordpress.com/2023/09/theme-17-2x.webp',
+            'https://wpcom.files.wordpress.com/2023/09/theme-16-2x.webp',
+            'https://wpcom.files.wordpress.com/2023/08/theme-9-2x-2.webp',
+            'https://wpcom.files.wordpress.com/2023/08/theme-8-2x-2.webp',
+            'https://wpcom.files.wordpress.com/2023/08/theme-7-2x-2.webp'
+          ]
+        }/>
       </section>
     <section className='bg-[#101517] -my-20 sm:-my-60 flex justify-center'>
         <div className="pt-36 md:pt-60 w-full max-w-[1400px] max-xl:px-5">
