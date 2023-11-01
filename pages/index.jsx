@@ -125,7 +125,7 @@ export default function Index() {
           </div>
             <div className='max-lg:hidden xl:-mr-32'>
               <SearchBar classes={'bg-gray-400 h-20 rounded-b-none text-black text-xl'}/>
-              <img width='710' height='410' src="https://s1.wp.com/wp-content/themes/h4/landing/marketing/pages/hp-2022-oct/media/desktop/salesforce-2x.webp" alt="" className='rounded-b-xl'/>
+              <img width='710' src="https://s1.wp.com/wp-content/themes/h4/landing/marketing/pages/hp-2022-oct/media/desktop/salesforce-2x.webp" alt="" className='rounded-b-xl'/>
             </div>
         </div>
         <div id='banner'></div>

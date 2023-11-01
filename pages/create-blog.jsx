@@ -31,7 +31,7 @@ export default function CreateBlog() {
             <img className="md:order-last" src="https://wpcom.files.wordpress.com/2022/12/create-blog-window-camera.jpg" alt="" height='528' width='528' />
             <Blocks color="black" content={blocks1} />
           </div>
-          <img className="relative md:my-16 border-[10px] border-gray-200 rounded-3xl shadow-2xl" src="https://wpcom.files.wordpress.com/2022/12/create-blog-wang-cheung.jpg" />
+          <img className="relative md:my-16 border-[10px] border-gray-200 rounded-3xl shadow-2xl" src="https://wpcom.files.wordpress.com/2022/12/create-blog-wang-cheung.jpg" alt=''/>
         </div>
       </section>
       <section className="bg-[#101517] text-white -mt-40 md:-mt-[500px]">
